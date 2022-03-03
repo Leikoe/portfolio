@@ -1,26 +1,22 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
+import PortfolioItem from "@/components/PortfolioItem.vue";
 </script>
 
 <template>
   <header>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
+    <h1 class="flex font-sans flex-col p-5 font-bold">
+      <span class="text-9xl underline pb-5">Hi, I'm Léo</span>
+      <span class="text-6xl green no-underline">backend developper</span>
+    </h1>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <!-- <HelloWorld msg="You did it!" /> -->
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/folio">My work</RouterLink>
       </nav>
     </div>
   </header>
