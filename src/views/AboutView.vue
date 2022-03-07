@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="about">
+  <div class="about bg-neutral-100">
     <h1>This is an about page</h1>
   </div>
 </template>
