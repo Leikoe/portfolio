@@ -1,8 +1,17 @@
-<script setup></script>
+<script setup>
+import PortfolioItem from "@/components/PortfolioItem.vue";
+
+var data = [{ title: "test title", text: "test text" }];
+</script>
 
 <template>
-  <div class="folio">
-    <h1>portfolio page</h1>
+  <div class="folio flex justify-center flex-col w-full">
+    <PortfolioItem
+      v-for="item in data"
+      :key="item.title"
+      v-bind:title="item.title"
+      v-bind:text="item.text"
+    ></PortfolioItem>
   </div>
 </template>
 

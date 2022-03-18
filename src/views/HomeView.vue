@@ -1,5 +1,5 @@
 <script setup>
-import FolioView from "./FolioView.vue";
+import FolioView from "@/views/FolioView.vue";
 </script>
 
 <template>
@@ -22,7 +22,7 @@ import FolioView from "./FolioView.vue";
       <img class="w-96" src="/computer_illustration.svg" alt="" />
     </div>
 
-    <!-- <FolioView class="w-full" /> -->
+    <FolioView class="w-full" />
   </content>
 </template>
 
