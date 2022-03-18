@@ -6,7 +6,7 @@ import FolioView from "./FolioView.vue";
   <!-- main content scroll container -->
   <content class="h-screen flex flex-col w-full">
     <!-- Hi -->
-    <div class="flex justify-center m-10 items-center m-10 justify-between">
+    <div class="flex justify-center m-10 items-center m-10 justify-around">
       <div class="w-1/2 flex justify-center items-center">
         <h1 class="flex font-sans flex-col p-5 text-mandy-800">
           <span class="text-9xl pb-5 font-bold"
