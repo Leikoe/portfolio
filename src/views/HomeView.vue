@@ -19,7 +19,7 @@ import FolioView from "./FolioView.vue";
         </h1>
       </div>
 
-      <img class="w-96" src="public/computer_illustration.svg" alt="" />
+      <img class="w-96" src="/computer_illustration.svg" alt="" />
     </div>
 
     <!-- <FolioView class="w-full" /> -->
