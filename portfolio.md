@@ -20,7 +20,7 @@
 
 - [ ] Special thanks
 
-# Stonks (py, js, go, cpp, rust, Java) /w Refactor
+# Stonks (py, js, go, cpp, rust, Java, Kotlin) /w Refactor
 
 `DISCONTINUED`
 

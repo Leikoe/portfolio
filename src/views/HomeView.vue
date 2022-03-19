@@ -6,14 +6,17 @@ import FolioView from "@/views/FolioView.vue";
   <!-- main content scroll container -->
   <content class="flex flex-col justify-between p-10 space-y-52 pt-0">
     <!-- Hi -->
-    <div class="flex justify-center items-center justify-around h-screen">
+    <div class="flex justify-between items-center h-screen">
       <div class="flex justify-center items-center basis-1/2">
-        <h1 class="flex font-sans flex-col p-5 text-mandy-700">
+        <h1
+          class="flex font-sans flex-col p-5 dark:text-mandy-50 text-gray-700"
+        >
           <Transition enter-active-class="opacity-100" enter-from="opacity-0">
             <span
-              class="text-9xl pb-5 font-bold transition-all delay-300 ease-out"
+              class="text-9xl pb-5 font-bold transition-all delay-75 ease-in-out"
               >Hi,<br />
-              I'm Léo</span
+              I'm
+              <span class="text-mandy-700 font-bold">Léo</span>.</span
             >
           </Transition>
 

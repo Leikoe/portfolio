@@ -1,8 +1,13 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   mode: "jit",
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  darkMode: false,
+  darkMode: "class",
   theme: {
+    colors: {
+      gray: colors.neutral,
+    },
     extend: {
       colors: {
         mandy: {
@@ -17,6 +22,7 @@ module.exports = {
           800: "#961b3c",
           900: "#811a39",
         },
+        eyesaver: "#f0e7db",
       },
     },
   },
