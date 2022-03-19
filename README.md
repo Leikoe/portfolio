@@ -1,5 +1,3 @@
-- 👋 Hi, I’m @Leikoe
-- 👀 I’m interested in Hypixel Skyblock, memes, learning any useful language and fast http requests
-- 🌱 I’m currently learning Kotlin, Js, Python, Java
-- 💞️ I’m looking to collaborate on ... yeah no, unless Ryan wants to ;)
-- 📫 How to reach me on discord : Leiko#9999
+# Personnal portfolio
+
+Hi, welcome to my personnal portfolio !
