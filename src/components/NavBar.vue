@@ -21,7 +21,7 @@ function darkModeSwitch(val) {
     <div class="flex items-center">
       <RouterLink to="/" class="font-bold mx-5">
         <div class="flex items-center w-fit">
-          <img class="w-10 bg-transparent p-2 px-3" src="pfp.png" alt="" />
+          <img class="w-10 bg-transparent p-2 px-3" src="/favicon.ico" alt="" />
           <h1 class="font-bold">Leiko</h1>
         </div>
       </RouterLink>
@@ -33,8 +33,8 @@ function darkModeSwitch(val) {
       @click="darkModeSwitch()"
       class="border-2 rounded-lg p-1 border-mandy-700"
     >
-      <img class="block dark:hidden" src="dark_mode_black_24dp.svg" alt="" />
-      <img class="hidden dark:block" src="light_mode_white_24dp.svg" alt="" />
+      <img class="block dark:hidden" src="/dark_mode_black_24dp.svg" alt="" />
+      <img class="hidden dark:block" src="/light_mode_white_24dp.svg" alt="" />
     </div>
   </nav>
 </template>
