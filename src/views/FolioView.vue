@@ -25,7 +25,7 @@ var data = [
   <div class="flex flex-col justify-center items-center">
     <div class="flex justify-start items-center flex-col">
       <h1 class="text-4xl pb-5 font-bold text-gray-800 dark:text-gray-50 mb-5">
-        My past work
+        My works
       </h1>
       <div class="flex items-center flex-wrap w-1/2">
         <!-- <PortfolioItem
