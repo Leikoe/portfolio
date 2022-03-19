@@ -24,17 +24,13 @@ defineProps({
     type: String,
   },
 });
-
-function getImage(image) {
-  return new URL("../assets/" + image, import.meta.url).href;
-}
 </script>
 
 <template>
   <div class="text-gray-50 flex flex-col items-center text-center">
     <img
       class="inset-0 w-60 h-35 object-cover rounded-lg hover:cursor-pointer"
-      :src="getImage(image)"
+      :src="image"
       alt=""
     />
     <h1 class="py-2 text-xl">{{ name }}</h1>
