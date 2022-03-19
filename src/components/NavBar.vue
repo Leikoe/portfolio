@@ -16,7 +16,7 @@ function darkModeSwitch(val) {
 
 <template>
   <nav
-    class="flex items-center justify-between sticky top-0 z-50 wrapper text-gray-800 dark:text-mandy-50 text-2xl p-5 w-full dark:bg-gray-800 opacity-70 bg-eyesaver"
+    class="flex items-center justify-between sticky top-0 z-50 wrapper text-gray-800 dark:text-mandy-50 text-2xl p-5 w-2/3 dark:bg-gray-800 opacity-70 bg-eyesaver"
   >
     <div class="flex items-center">
       <RouterLink to="/" class="font-bold mx-5">

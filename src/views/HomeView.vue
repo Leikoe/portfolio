@@ -4,10 +4,12 @@ import FolioView from "@/views/FolioView.vue";
 
 <template>
   <!-- main content scroll container -->
-  <content class="flex flex-col justify-between p-10 space-y-52 pt-0">
+  <content
+    class="flex flex-col justify-between p-10 space-y-52 pt-0 items-center w-full"
+  >
     <!-- Hi -->
-    <div class="flex justify-between items-center h-screen">
-      <div class="flex justify-center items-center basis-1/2">
+    <div class="flex justify-between items-center h-screen w-4/5">
+      <div class="flex justify-start items-center basis-1/2">
         <h1
           class="flex font-sans flex-col p-5 dark:text-mandy-50 text-gray-700"
         >
