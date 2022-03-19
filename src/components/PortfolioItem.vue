@@ -1,19 +1,23 @@
 <script setup>
 defineProps({
-  title: {
+  name: {
+    type: String,
+    required: true,
+  },
+  desc: {
     type: String,
     required: true,
   },
   text: {
     type: String,
-    required: true,
+    required: false,
   },
-  year: {
-    type: Number,
-    required: true,
+  date: {
+    type: String,
+    required: false,
   },
   techs: {
-    type: String,
+    type: Array,
     required: false,
   },
   image: {
@@ -24,22 +28,14 @@ defineProps({
 </script>
 
 <template>
-  <div
-    class="flex w-1/2 bg-gradient-to-b from-mandy-700 to-mandy-800 rounded-xl shadow-gray-500 shadow-lg"
-  >
-    <div class="w-96">
-      <img
-        class="inset-0 w-full h-full object-cover"
-        src="https://t3.ftcdn.net/jpg/03/15/34/90/360_F_315349043_6ohfFyx37AFusCKZtGQtJR0jqUxhb25Y.jpg"
-        alt=""
-      />
-    </div>
-
-    <div class="flex font-sans flex-col dark:text-mandy-200 p-6 w-1/2">
-      <h1 class="text-mandy-100 text-3xl font-bold pb-5">{{ title }}</h1>
-      <h3 class="text-mandy-300 text-xl font-thin">
-        {{ text }}
-      </h3>
+  <div class="text-gray-50 flex flex-col items-center">
+    <img class="rounded-xl w-60" :src="'../assets/' + image + ''" alt="" />
+    <h1 class="py-2 text-xl">{{ name }}</h1>
+    <h3 class="font-thin">{{ desc }}</h3>
+    <div class="flex text-xl">
+      <h1 v-for="tech in techs" :key="tech" class="text-mandy-600 px-2">
+        {{ tech }}
+      </h1>
     </div>
   </div>
 </template>

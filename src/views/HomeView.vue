@@ -5,33 +5,39 @@ import FolioView from "@/views/FolioView.vue";
 <template>
   <!-- main content scroll container -->
   <content
-    class="flex flex-col justify-between p-10 space-y-52 pt-0 items-center w-full"
+    class="flex flex-col justify-start md:justify-between md:p-10 space-y-60 pt-0 items-center w-4/5"
   >
     <!-- Hi -->
-    <div class="flex justify-between items-center h-screen w-4/5">
-      <div class="flex justify-start items-center basis-1/2">
+    <div
+      class="flex flex-col md:flex-row justify-start md:justify-between items-center w-full min-h-screen"
+    >
+      <div class="flex justify-start items-center md:basis-1/2 w-full">
         <h1
           class="flex font-sans flex-col p-5 dark:text-mandy-50 text-gray-700"
         >
           <Transition enter-active-class="opacity-100" enter-from="opacity-0">
             <span
-              class="text-9xl pb-5 font-bold transition-all delay-75 ease-in-out"
-              >Hi,<br />
+              class="text-2xl md:text-9xl md:pb-5 font-bold transition-all delay-75 ease-in-out"
+              >Hi,<br class="hidden md:block" />
               I'm
               <span class="text-mandy-700 font-bold">Léo</span>.</span
             >
           </Transition>
 
-          <span class="text-6xl no-underline font-thin"
+          <span class="text:lg md:text-6xl no-underline font-thin"
             >backend developper</span
           >
         </h1>
       </div>
 
-      <img class="basis-1/2 w-96" src="/computer_illustration.svg" alt="" />
+      <img
+        class="hidden md:block basis-1/2 w-96"
+        src="@/assets/computer_illustration.svg"
+        alt=""
+      />
     </div>
 
-    <FolioView />
+    <FolioView class="hidden md:block" />
   </content>
 </template>
 

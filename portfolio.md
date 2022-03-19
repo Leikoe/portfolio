@@ -24,9 +24,9 @@
 
 `DISCONTINUED`
 
-![Stonks ingame GUI](public/GUI.png)
-![Stonks discord Flips](public/discord_flips.png)
-![Stonks flips](public/flips.png)
+![Stonks ingame GUI](src/assets/GUI.png)
+![Stonks discord Flips](src/assets/discord_flips.png)
+![Stonks flips](src/assets/flips.png)
 
 This was my main project for almost 2 years, it is a sniping tool for the game Hypixel Skyblock, it's a bot which scans the ingame market 24/7 and notifies you when an item has been put up for sale for too low, which you can then easely buy with the keybinds of the `ingame mod` or from the `discord bot` feed. I started the project alone and in mid 2021, I met Refactor, a friend who helped me with the project and taught me `c++` aswell as `flask`. This project taught me almost everything I know about low level programming, optimisation, algorithms and networks.
 
@@ -36,7 +36,7 @@ This was my main project for almost 2 years, it is a sniping tool for the game H
 
 `WIP`
 
-![NSG discord feed](public/NSG.png)
+![NSG discord feed](src/assets/NSG.png)
 
 NSG is a discord me and some friends which I made along my NFT/WEB3 journey created. In this discord I made a bot which notifies us when nft collections reveal and tells us which nfts are the cheapest on opensea, to then buy and resell for massive profits. I learned rust along the way. Refactor helped me with some performance issues and brainstorming here. I learned a lot more optimisation along the way.
 
@@ -46,7 +46,7 @@ NSG is a discord me and some friends which I made along my NFT/WEB3 journey crea
 
 `DONE`
 
-![Blitzsolver score against french average](public/blitzsolver.jpg)
+![Blitzsolver score against french average](src/assets/blitzsolver.jpg)
 
 When I saw my parents play a little scrabble like mobile game, I had the idea of making a bot which plays the game by itself using the scrabble dictionnary (which i had to store in a specific made data structure for lookup performance). Using tesseract to get the board letters into python and using DFS to find the possible words. PYautoGUI was also used to fake mouse inputs and let python play the game on an Android emulator (NOX). This project taught me python oop, aswell as OCR and pyautogui + it was the early introduction to data structures and algorithmic optimisation for me.
 
@@ -74,7 +74,7 @@ In class we were taught how to draw lines, points and circles in a windows forms
 
 //TODO
 
-![Nico releasing the database to public](public/exotic%20db.png)
+![Nico releasing the database to public](src/assets/exotic%20db.png)
 
 **2020**
 
@@ -90,7 +90,7 @@ In class we were taught how to draw lines, points and circles in a windows forms
 
 `DONE`
 
-![Stairs.io](public/Exotic%20Caf%C3%A9.png)
+![Stairs.io](src/assets/Exotic%20Caf%C3%A9.png)
 
 //TODO
 
@@ -124,7 +124,7 @@ In class we were taught how to draw lines, points and circles in a windows forms
 
 `DONE`
 
-![Stairs.io](public/stairsio.jpg)
+![Stairs.io](src/assets/stairsio.jpg)
 Stairs.io is my first mobile game, I created it for education purposes and learned c# while making it aswell as Unity.
 
 **2020**
@@ -133,7 +133,7 @@ Stairs.io is my first mobile game, I created it for education purposes and learn
 
 `WIP`
 
-![Stairs.io](public/Exotic%20Caf%C3%A9.png)
+![Stairs.io](src/assets/Exotic%20Caf%C3%A9.png)
 
 Exotic Café is the discord community I created for the game Hypixel Skyblock, it's a community for collectors of some special ingame items. I learned community moderation and management aswell as adobe illustrator while making the different logos. The discord was created with my coop Vincent and two other friends (Rias_dono and Axore). I'm extremely grateful for the insane moderation team and the admins <3.
 
