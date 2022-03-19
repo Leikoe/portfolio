@@ -16,25 +16,36 @@ defineProps({
     type: String,
     required: false,
   },
-  techs: {
+  skills: {
     type: Array,
     required: false,
   },
   image: {
     type: String,
-    required: false,
   },
 });
+
+function getImage(image) {
+  return new URL("../assets/" + image, import.meta.url).href;
+}
 </script>
 
 <template>
-  <div class="text-gray-50 flex flex-col items-center">
-    <img class="rounded-xl w-60" :src="'../assets/' + image + ''" alt="" />
+  <div class="text-gray-50 flex flex-col items-center text-center">
+    <img
+      class="inset-0 w-60 h-35 object-cover rounded-lg hover:cursor-pointer"
+      :src="getImage(image)"
+      alt=""
+    />
     <h1 class="py-2 text-xl">{{ name }}</h1>
-    <h3 class="font-thin">{{ desc }}</h3>
-    <div class="flex text-xl">
-      <h1 v-for="tech in techs" :key="tech" class="text-mandy-600 px-2">
-        {{ tech }}
+    <h1 class="text-md font-thin">{{ desc }}</h1>
+    <div class="flex">
+      <h1
+        v-for="skill in skills"
+        :key="skill"
+        class="text-sm text-mandy-600 px-2"
+      >
+        {{ skill }}
       </h1>
     </div>
   </div>

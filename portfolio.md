@@ -135,7 +135,7 @@ Stairs.io is my first mobile game, I created it for education purposes and learn
 
 ![Stairs.io](src/assets/Exotic%20Caf%C3%A9.png)
 
-Exotic Café is the discord community I created for the game Hypixel Skyblock, it's a community for collectors of some special ingame items. I learned community moderation and management aswell as adobe illustrator while making the different logos. The discord was created with my coop Vincent and two other friends (Rias_dono and Axore). I'm extremely grateful for the insane moderation team and the admins <3.
+Exotic Café is the discord community I created for the game Hypixel Skyblock, it's a community for collectors of some special ingame items. I learned community moderation and management aswell as adobe illustrator while making the different logos. The discord was created with my coop Vincent and two other friends (Rias_dono and Axore). I'm extremely grateful for the amazing moderation team and the admins <3.
 
 **2020-2022**
 

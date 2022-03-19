@@ -5,11 +5,11 @@ import FolioView from "@/views/FolioView.vue";
 <template>
   <!-- main content scroll container -->
   <content
-    class="flex flex-col justify-start md:justify-between md:p-10 space-y-60 pt-0 items-center w-4/5"
+    class="flex flex-col justify-start md:justify-between md:p-10 space-y-20 md:space-y-60 pt-0 items-center"
   >
     <!-- Hi -->
     <div
-      class="flex flex-col md:flex-row justify-start md:justify-between items-center w-full min-h-screen"
+      class="flex flex-col md:flex-row justify-start md:justify-between items-center w-full md:min-h-screen"
     >
       <div class="flex justify-start items-center md:basis-1/2 w-full">
         <h1
@@ -37,7 +37,7 @@ import FolioView from "@/views/FolioView.vue";
       />
     </div>
 
-    <FolioView class="hidden md:block" />
+    <FolioView />
   </content>
 </template>
 
