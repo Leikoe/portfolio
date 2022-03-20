@@ -10,17 +10,17 @@ defineProps({
   },
   text: {
     type: String,
-    required: false,
   },
   date: {
     type: String,
-    required: false,
   },
   skills: {
     type: Array,
-    required: false,
   },
   image: {
+    type: String,
+  },
+  status: {
     type: String,
   },
 });
