@@ -39,7 +39,9 @@ const path = computed(() => route.path);
             <h1
               class="font-bold"
               :class="
-                path == '/' ? 'underline decoration-mandy-700 decoration-4' : ''
+                path == '/'
+                  ? 'md:underline decoration-mandy-700 decoration-4'
+                  : ''
               "
             >
               Leiko
@@ -51,7 +53,7 @@ const path = computed(() => route.path);
           class="hidden md:inline mx-5"
           :class="
             path == '/works'
-              ? 'underline decoration-mandy-700 decoration-4'
+              ? 'md:underline decoration-mandy-700 decoration-4'
               : ''
           "
           >my works</RouterLink
@@ -61,7 +63,7 @@ const path = computed(() => route.path);
           class="hidden md:inline mx-5"
           :class="
             path == '/contact'
-              ? 'underline decoration-mandy-700 decoration-4'
+              ? 'md:underline decoration-mandy-700 decoration-4'
               : ''
           "
           >contact</RouterLink
