@@ -33,7 +33,7 @@ var data = [
     name: "Voxel Game engine",
     status: "WIP",
     desc: "A simple 3d voxel game engine made in WindowsForms .NET",
-    image: "blitzsolver.png",
+    image: "voxel.png",
     text: "In class we were taught how to draw lines, points and circles in a windows forms .NET application. I had the idea of making a game loop using the Invalidate() method, which allowed me to then make a rendering engine using matrix maths. This turned into a mincraft clone. This project mostly made me more comfortable about using matrices and Trigonometry.",
     date: "2022 march - ?",
     skills: [".NET", "c#", "windows forms"],
@@ -59,7 +59,7 @@ var data = [
   {
     name: "STLK",
     status: "DISCONTINUED",
-    desc: "STLK is a website used to track players in the game Hypixel Skyblock, it aims to help players to trade goods, even if they have different timezones. This project taught me prototyping in figma.",
+    desc: "STLK is a website used to track players in the game Hypixel Skyblock, it aims to help players to trade goods, even with different timezones",
     image: "stlk_list.png",
     text: "After creating the Exotic Database, I knew which players had the rare exotic armor pieces I was searching for, but knowing wasn't enough to buy those pieces from them. I needed a way to contact them, and being french, I had a different timezone as most of the players. I ended up creating a first version of a tracker in python, which worked but wasn't easy to use and could only be ran in local. That's why I decided to create STLK. It was a good project to learn figma prototyping on and VueJs aswell. I ended up making several iterations of the design in figma. When I was satisfied with the prototypes and design of the overall page, it was sadly the end of my vacations and with class I didn't have as much time to spend on learning Vue and ended up giving up on the project. I learned a lot through this.",
     date: "2021",
@@ -68,7 +68,7 @@ var data = [
   {
     name: "Exotic twitter bot",
     status: "DONE",
-    desc: "A twitter bot which notifies you on your phone when an Exotic Armor piece was put up for sale in the ingame auction house of Hypixel Skyblock.",
+    desc: "A twitter bot which notifies you on your phone when an Exotic Armor piece was put up for sale in the ingame auction house of Hypixel Skyblock",
     image: "exotic_escobar.png",
     text: "At the beginning of the exotic armor hunt era, players didn't have any ways of tracking the rare armor pieces, some where put up for sale on the ingame auction house amongst the normal pieces. I had the idea of making a twitter bot which we would follow to get notifications and be able to get the pieces off the auction house quickly after they were put up for sale. I learned to work with twitter bot api in python aswell as python requests and the json format here too.",
     date: "2020 december",

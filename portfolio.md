@@ -74,7 +74,7 @@ _Rust_
 
 > WordBlitz self playing bot
 
-![Blitzsolver score against french average](public/blitzsolver.jpg.jpg)
+![Blitzsolver score against french average](public/blitzsolver.jpg)
 
 When I saw my parents play a little scrabble like mobile game, I had the idea of making a bot which plays the game by itself using the scrabble dictionnary (which i had to store in a specific made data structure for lookup performance). Using tesseract to get the board letters into python and using DFS to find the possible words. PYautoGUI was also used to fake mouse inputs and let python play the game on an Android emulator (NOX). This project taught me python oop, aswell as OCR and pyautogui + it was the early introduction to data structures and algorithmic optimisation for me.
 
@@ -87,6 +87,8 @@ _python, tesseract_
 `WIP`
 
 > A simple 3d voxel game engine made in WindowsForms .NET
+
+![Exotic twitter bot feed](public/voxel.png)
 
 In class we were taught how to draw lines, points and circles in a windows forms .NET application. I had the idea of making a game loop using the Invalidate() method, which allowed me to then make a rendering engine using matrix maths. This turned into a mincraft clone. This project mostly made me more comfortable about using matrices and Trigonometry.
 
@@ -126,7 +128,7 @@ _python, mongodb_
 
 `DISCONTINUED`
 
-> STLK is a website used to track players in the game Hypixel Skyblock, it aims to help players to trade goods, even if they have different timezones. This project taught me prototyping in figma.
+> STLK is a website used to track players in the game Hypixel Skyblock, it aims to help players to trade goods, even with different timezones
 
 ![homepage](public/stlk_home.png)
 ![tracked players list](public/stlk_list.png)
@@ -141,7 +143,7 @@ _vuejs, html, css, figma_
 
 `DONE`
 
-> A twitter bot which notifies you on your phone when an Exotic Armor piece was put up for sale in the ingame auction house of Hypixel Skyblock.
+> A twitter bot which notifies you on your phone when an Exotic Armor piece was put up for sale in the ingame auction house of Hypixel Skyblock
 
 ![Exotic twitter bot feed](public/exotic_escobar.png)
 
