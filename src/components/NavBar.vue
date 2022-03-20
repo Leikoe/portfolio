@@ -12,6 +12,13 @@ function darkModeSwitch(val) {
     ? document.body.classList.add("dark")
     : document.body.classList.remove("dark");
 }
+
+import { useRoute } from "vue-router";
+import { computed } from "vue";
+
+const route = useRoute();
+
+const path = computed(() => route.path);
 </script>
 
 <template>
@@ -21,7 +28,7 @@ function darkModeSwitch(val) {
     <div
       class="flex items-center justify-between text-gray-700 dark:text-mandy-50 text-2xl md:p-5 md:w-2/3 w-full p-2"
     >
-      <div class="flex items-center">
+      <div class="flex items-center underline-offset-8">
         <RouterLink to="/" class="font-bold mr-5">
           <div class="flex items-center w-fit">
             <img
@@ -29,13 +36,34 @@ function darkModeSwitch(val) {
               src="/favicon.ico"
               alt=""
             />
-            <h1 class="font-bold">Leiko</h1>
+            <h1
+              class="font-bold"
+              :class="
+                path == '/' ? 'underline decoration-mandy-700 decoration-4' : ''
+              "
+            >
+              Leiko
+            </h1>
           </div>
         </RouterLink>
-        <RouterLink to="/works" class="hidden md:inline mx-5"
+        <RouterLink
+          to="/works"
+          class="hidden md:inline mx-5"
+          :class="
+            path == '/works'
+              ? 'underline decoration-mandy-700 decoration-4'
+              : ''
+          "
           >my works</RouterLink
         >
-        <RouterLink to="/contact" class="hidden md:inline mx-5"
+        <RouterLink
+          to="/contact"
+          class="hidden md:inline mx-5"
+          :class="
+            path == '/contact'
+              ? 'underline decoration-mandy-700 decoration-4'
+              : ''
+          "
           >contact</RouterLink
         >
       </div>

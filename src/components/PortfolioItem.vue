@@ -37,14 +37,16 @@ defineProps({
     />
     <h1 class="py-2 text-xl">{{ name }}</h1>
     <h1 class="text-md font-thin">{{ desc }}</h1>
-    <div class="flex">
-      <h1
+    <div class="flex my-2 flex-wrap w-2/3">
+      <div
         v-for="skill in skills"
         :key="skill"
-        class="text-sm text-mandy-600 px-2"
+        class="text-sm font-thin text-gray-50 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-md mx-1 py-0.5 my-1"
       >
-        {{ skill }}
-      </h1>
+        <h1>
+          {{ skill }}
+        </h1>
+      </div>
     </div>
   </div>
 </template>
