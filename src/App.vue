@@ -10,7 +10,9 @@ import NavBar from "@/components/NavBar.vue";
     <nav-bar />
     <div class="flex flex-col items-center w-4/5">
       <RouterView />
-      <h1 class="mb-5">© 2022 Leiko. All Rights Reserved.</h1>
+      <h1 class="mb-5 dark:text-gray-50 text-gray-700">
+        © 2022 Leiko. All Rights Reserved.
+      </h1>
     </div>
   </main>
 </template>
