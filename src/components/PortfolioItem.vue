@@ -28,6 +28,8 @@ defineProps({
 
 <template>
   <div class="flex flex-col items-center text-center p-10">
+    <!-- TODO: create WorkView View -->
+    <!-- TODO: add router push to WorkView with props as params -->
     <img
       class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
       :src="image"
