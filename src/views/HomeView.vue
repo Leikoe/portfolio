@@ -41,11 +41,11 @@ import WorksView from "@/views/WorksView.vue";
 
     <div class="text-gray-50 md:w-1/2 md:p-10 pt-0 !mt-5">
       <span
-        class="underline text-xl font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
+        class="underline text-2xl font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
         >Bio</span
       ><br />
       <h1
-        class="indent-5 text-justify text-xl md:text-2xl leading-snug font-extralight"
+        class="indent-5 text-justify text-lg md:text-2xl leading-snug font-thin tracking-tight"
       >
         I'm a french developper based in Bordeaux. I started algorithms at 8 and
         started coding at 10 years old, but stopped to play games a year or two
