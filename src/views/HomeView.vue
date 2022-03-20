@@ -5,16 +5,18 @@ import WorksView from "@/views/WorksView.vue";
 <template>
   <!-- main content scroll container -->
   <content
-    class="flex flex-col justify-start md:justify-between md:p-10 space-y-20 md:space-y-60 pt-0 items-center"
+    class="flex flex-col justify-start md:justify-between md:p-10 space-y-20 md:space-y-30 pt-0 items-center font-mono"
   >
     <!-- Hi -->
     <div
       class="flex flex-col md:flex-row justify-start md:justify-between items-center w-full md:min-h-screen"
     >
+      <div class="w-1/2 md:hidden m-10">
+        <img class="rounded-full" src="/pfp.png" alt="" />
+      </div>
+
       <div class="flex justify-start items-center md:basis-1/2 w-full">
-        <h1
-          class="flex font-sans flex-col p-5 dark:text-mandy-50 text-gray-700"
-        >
+        <h1 class="flex flex-col md:p-5 dark:text-mandy-50 text-gray-700">
           <Transition enter-active-class="opacity-100" enter-from="opacity-0">
             <span
               class="text-2xl md:text-9xl md:pb-5 font-bold transition-all delay-75 ease-in-out"
@@ -35,6 +37,21 @@ import WorksView from "@/views/WorksView.vue";
         src="@/assets/computer_illustration.svg"
         alt=""
       />
+    </div>
+
+    <div class="text-gray-50 md:w-1/2 md:p-10 pt-0 !mt-5">
+      <span
+        class="underline text-xl font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
+        >Bio</span
+      ><br />
+      <h1
+        class="indent-5 text-justify text-xl md:text-2xl leading-snug font-extralight"
+      >
+        I'm a french developper based in Bordeaux. I started algorithms at 8 and
+        started coding at 10 years old, but stopped to play games a year or two
+        after. I've been learning science since then, but in 2017-2018 I started
+        coding again, and this time I had projects.
+      </h1>
     </div>
 
     <WorksView />

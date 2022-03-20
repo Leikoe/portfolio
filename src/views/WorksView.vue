@@ -57,7 +57,7 @@ var data = [
   <div class="flex flex-col justify-center items-center">
     <div class="flex justify-start items-center flex-col">
       <h1
-        class="text-4xl pb-5 font-bold text-gray-800 dark:text-gray-50 mb-5 underline decoration-mandy-700 decoration-4 underline-offset-8"
+        class="text-4xl md:pb-5 font-bold text-gray-800 dark:text-gray-50 mb-5 underline decoration-mandy-700 decoration-4 underline-offset-8"
       >
         My works
       </h1>
@@ -73,7 +73,7 @@ var data = [
           v-bind:date="item.date"
           v-bind:image="item.image"
           v-bind:skills="item.skills"
-          class="my-10 md:w-1/2"
+          class="md:my-10 md:w-1/2"
         ></PortfolioItem>
       </div>
     </div>
