@@ -32,7 +32,7 @@ const path = computed(() => route.path);
         <RouterLink to="/" class="font-bold mr-5">
           <div class="flex items-center w-fit">
             <img
-              class="w-10 bg-transparent p-2 px-3"
+              class="w-12 md:w-16 bg-transparent p-2 px-3 crisp"
               src="/favicon.ico"
               alt=""
             />
@@ -84,3 +84,9 @@ const path = computed(() => route.path);
     </div>
   </nav>
 </template>
+
+<style scoped>
+.crisp {
+  image-rendering: crisp-edges;
+}
+</style>
