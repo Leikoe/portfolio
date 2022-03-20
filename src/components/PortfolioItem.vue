@@ -28,16 +28,16 @@ defineProps({
 
 <template>
   <div
-    class="text-gray-700 dark:text-gray-50 flex flex-col items-center text-center"
+    class="text-gray-700 dark:text-gray-50 flex flex-col items-center text-center p-10"
   >
     <img
-      class="inset-0 w-60 h-35 object-cover rounded-lg hover:cursor-pointer"
+      class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
       :src="image"
       alt=""
     />
-    <h1 class="py-2 text-xl">{{ name }}</h1>
+    <h1 class="pt-4 text-xl">{{ name }}</h1>
     <h1 class="text-md font-thin">{{ desc }}</h1>
-    <div class="flex my-2 flex-wrap w-2/3">
+    <div class="flex my-2 flex-wrap w-full">
       <div
         v-for="skill in skills"
         :key="skill"
