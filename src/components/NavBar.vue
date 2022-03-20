@@ -26,7 +26,7 @@ const path = computed(() => route.path);
     class="sticky top-0 z-50 w-full flex justify-center dark:bg-gray-800/70 bg-gray-50/70"
   >
     <div
-      class="flex items-center justify-between text-gray-700 dark:text-mandy-50 text-2xl md:p-5 md:w-2/3 w-full p-2"
+      class="flex items-center justify-between text-2xl md:p-5 md:w-2/3 w-full p-2"
     >
       <div class="flex items-center underline-offset-8">
         <RouterLink to="/" class="font-bold mr-5">

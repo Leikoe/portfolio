@@ -27,9 +27,7 @@ defineProps({
 </script>
 
 <template>
-  <div
-    class="text-gray-700 dark:text-gray-50 flex flex-col items-center text-center p-10"
-  >
+  <div class="flex flex-col items-center text-center p-10">
     <img
       class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
       :src="image"

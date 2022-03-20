@@ -16,7 +16,7 @@ import WorksView from "@/views/WorksView.vue";
       </div>
 
       <div class="flex justify-start items-center md:basis-1/2 w-full">
-        <h1 class="flex flex-col md:p-5 dark:text-mandy-50 text-gray-700">
+        <h1 class="flex flex-col md:p-5">
           <Transition enter-active-class="opacity-100" enter-from="opacity-0">
             <span
               class="text-2xl md:text-9xl md:pb-5 font-bold transition-all delay-75 ease-in-out"
@@ -39,7 +39,7 @@ import WorksView from "@/views/WorksView.vue";
       />
     </div>
 
-    <div class="text-gray-50 md:w-1/2 md:p-10 pt-0 !mt-5">
+    <div class="md:w-1/2 md:p-10 pt-0 !mt-5">
       <span
         class="underline text-2xl font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
         >Bio</span
