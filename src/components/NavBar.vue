@@ -32,7 +32,7 @@ const path = computed(() => route.path);
         <RouterLink to="/" class="font-bold mr-5">
           <div class="flex items-center w-fit">
             <img
-              class="w-12 md:w-16 bg-transparent p-2 px-3 crisp"
+              class="w-12 md:w-16 bg-transparent px-3 crisp"
               src="/favicon.ico"
               alt=""
             />
