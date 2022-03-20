@@ -32,10 +32,10 @@ function darkModeSwitch(val) {
             <h1 class="font-bold">Leiko</h1>
           </div>
         </RouterLink>
-        <RouterLink to="/folio" class="hidden md:inline mx-5"
+        <RouterLink to="/works" class="hidden md:inline mx-5"
           >my works</RouterLink
         >
-        <RouterLink to="/about" class="hidden md:inline mx-5"
+        <RouterLink to="/contact" class="hidden md:inline mx-5"
           >contact</RouterLink
         >
       </div>

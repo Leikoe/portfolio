@@ -1,5 +1,5 @@
 <script setup>
-import FolioView from "@/views/FolioView.vue";
+import WorksView from "@/views/WorksView.vue";
 </script>
 
 <template>
@@ -37,7 +37,7 @@ import FolioView from "@/views/FolioView.vue";
       />
     </div>
 
-    <FolioView />
+    <WorksView />
   </content>
 </template>
 
