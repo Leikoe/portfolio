@@ -59,9 +59,7 @@ defineProps({
 
       <p class="text-justify text-xl my-5">{{ desc }}</p>
 
-      <p class="indent-5 text-justify">{{ text
-  .replace(" `", '<span class="text-mandy-300">')
-  .replace("` ", "<span />") }}</p>
+      <p class="indent-5 text-justify">{{ text }}</p>
 
       <div class="flex flex-col items-center my-5 space-y-5">
         <img
