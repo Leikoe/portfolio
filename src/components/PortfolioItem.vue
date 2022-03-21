@@ -28,7 +28,7 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-col items-center text-center md:px-10 justify-start w-60 mb-20 md:h-96 last-of-type:mb-10"
+    class="flex flex-col items-center text-center justify-start w-96 lg:w-72 mb-20 lg:h-96 last-of-type:mb-10"
   >
     <!-- TODO: create WorkView View -->
     <!-- TODO: add router push to WorkView with props as params -->
@@ -40,12 +40,12 @@ defineProps({
       alt=""
     />
     <h1 class="pt-4 text-xl">{{ name }}</h1>
-    <h1 class="text-md font-thin">{{ desc }}</h1>
+    <h1 class="text-lg font-thin">{{ desc }}</h1>
     <div class="flex my-2 flex-wrap w-full h-20">
       <div
         v-for="skill in skills"
         :key="skill"
-        class="text-sm font-normal text-gray-200 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-md mx-1 py-0.5 my-1 h-6"
+        class="text-sm font-normal text-gray-200 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-lg mx-1 py-0.5 my-1 h-6"
       >
         <h1>
           {{ skill }}
