@@ -61,7 +61,7 @@ defineProps({
         <img
           v-for="image in images"
           :key="image"
-          :src="image"
+          :src="'/' + image"
           alt=""
           class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
         />
