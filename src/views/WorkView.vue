@@ -17,8 +17,8 @@ defineProps({
   skills: {
     type: Array,
   },
-  image: {
-    type: String,
+  images: {
+    type: Array,
   },
   status: {
     type: String,
@@ -28,11 +28,44 @@ defineProps({
 
 <template>
   <!-- main content scroll container -->
-  <content
-    class="flex flex-col justify-start md:justify-between md:p-10 space-y-20 md:space-y-30 pt-0 items-center font-mono"
-  >
-    <div>
-      <h1>{{ name }}</h1>
+  <content class="flex flex-col w-full items-center text-md">
+    <div class="w-1/3 m-5">
+      <a
+        @click="$router.back()"
+        class="text-mandy-300 inline-block pr-1 cursor-pointer hover:underline underline-offset-4 text-lg"
+        >Works</a
+      >
+      >
+      <h1 class="inline-block font-bold px-1 text-xl">{{ name }}</h1>
+      <h1 class="bg-mandy-300 inline-block px-1 rounded-md text-xs mx-1">
+        {{ date }}
+      </h1>
+
+      <div class="flex flex-wrap w-full mb-5">
+        <div
+          v-for="skill in skills"
+          :key="skill"
+          class="text-xs font-normal text-gray-200 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-md mx-1 py-0.5 my-1"
+        >
+          <h1>
+            {{ skill }}
+          </h1>
+        </div>
+      </div>
+
+      <p class="text-justify text-xl my-5">{{ desc }}</p>
+
+      <p class="indent-5 text-justify">{{ text }}</p>
+
+      <div class="flex flex-col items-center my-5 space-y-5">
+        <img
+          v-for="image in images"
+          :key="image"
+          :src="'/public/' + image"
+          alt=""
+          class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
+        />
+      </div>
     </div>
   </content>
 </template>

@@ -17,8 +17,8 @@ defineProps({
   skills: {
     type: Array,
   },
-  image: {
-    type: String,
+  images: {
+    type: Array,
   },
   status: {
     type: String,
@@ -27,22 +27,23 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col items-center text-center p-10">
+  <div class="flex flex-col items-center text-center p-10 justify-center">
     <!-- TODO: create WorkView View -->
     <!-- TODO: add router push to WorkView with props as params -->
+
     <img
-      class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
+      class="inset-0 w-60 h-30 object-none rounded-lg hover:cursor-pointer"
       @click="viewItem()"
-      :src="image"
+      :src="images[0]"
       alt=""
     />
     <h1 class="pt-4 text-xl">{{ name }}</h1>
     <h1 class="text-md font-thin">{{ desc }}</h1>
-    <div class="flex my-2 flex-wrap w-full">
+    <div class="flex my-2 flex-wrap w-full h-20">
       <div
         v-for="skill in skills"
         :key="skill"
-        class="text-sm font-thin text-gray-50 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-md mx-1 py-0.5 my-1"
+        class="text-sm font-normal text-gray-200 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-md mx-1 py-0.5 my-1 h-6"
       >
         <h1>
           {{ skill }}
@@ -52,6 +53,7 @@ defineProps({
   </div>
 </template>
 
+//
 <script>
 export default {
   methods: {
@@ -64,7 +66,7 @@ export default {
           text: this.text,
           date: this.date,
           skills: this.skills,
-          image: this.image,
+          images: this.images,
           status: this.status,
         },
       });
