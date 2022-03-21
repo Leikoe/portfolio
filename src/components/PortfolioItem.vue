@@ -32,6 +32,7 @@ defineProps({
     <!-- TODO: add router push to WorkView with props as params -->
     <img
       class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
+      @click="viewItem()"
       :src="image"
       alt=""
     />
@@ -50,3 +51,24 @@ defineProps({
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    viewItem: function () {
+      this.$router.push({
+        name: "Work",
+        params: {
+          name: this.name,
+          desc: this.desc,
+          text: this.text,
+          date: this.date,
+          skills: this.skills,
+          image: this.image,
+          status: this.status,
+        },
+      });
+    },
+  },
+};
+</script>
