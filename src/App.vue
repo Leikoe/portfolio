@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar.vue";
 
 <template>
   <main
-    class="flex flex-col justify-center dark:bg-gray-800 bg-eyesaver min-h-screen items-center dark:text-gray-50 text-gray-700"
+    class="flex flex-col justify-start dark:bg-gray-800 bg-eyesaver min-h-screen items-center dark:text-gray-50 text-gray-700"
   >
     <nav-bar />
     <div class="flex flex-col items-center w-4/5">
