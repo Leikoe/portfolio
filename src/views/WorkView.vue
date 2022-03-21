@@ -24,6 +24,10 @@ defineProps({
     type: String,
   },
 });
+
+// var formattedText = this.text
+//   .replace(" `", '<span class="highlight">')
+//   .replace("` ", "<span />");
 </script>
 
 <template>
@@ -55,7 +59,9 @@ defineProps({
 
       <p class="text-justify text-xl my-5">{{ desc }}</p>
 
-      <p class="indent-5 text-justify">{{ text }}</p>
+      <p class="indent-5 text-justify">{{ text
+  .replace(" `", '<span class="highlight">')
+  .replace("` ", "<span />"); }}</p>
 
       <div class="flex flex-col items-center my-5 space-y-5">
         <img
@@ -69,3 +75,9 @@ defineProps({
     </div>
   </content>
 </template>
+
+<style scoped>
+.highlight {
+  color: aqua;
+}
+</style>
