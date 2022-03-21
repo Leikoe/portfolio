@@ -45,7 +45,7 @@ defineProps({
         <div
           v-for="skill in skills"
           :key="skill"
-          class="text-xs font-normal text-gray-200 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-md mx-1 py-0.5 my-1"
+          class="text-xs font-normal text-gray-200 dark:text-gray-700 px-1.5 bg-gray-600 dark:bg-gray-200 rounded-md mx-1 py-0.5 my-1"
         >
           <h1>
             {{ skill }}
