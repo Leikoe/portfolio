@@ -60,13 +60,14 @@ _Python, Javascript, Golang, C++, Rust, Java, Kotlin_
 
 > NFT sniping bot
 
-![NSG discord feed](public/NSG.png)
+![NSG discord feed](public/nsg.png)
+![NSG discord feed](public/nsg_flip.png)
 
 NSG is a discord me and some friends which I made along my NFT/WEB3 journey created. In this discord I made a bot which notifies us when nft collections reveal and tells us which nfts are the cheapest on opensea, to then buy and resell for massive profits. I learned rust along the way. Refactor helped me with some performance issues and brainstorming here. I learned a lot more optimisation along the way.
 
 **2022 february - ?**
 
-_Rust_
+_rust, multithreading_
 
 # WordBlitz Solver
 
@@ -74,7 +75,7 @@ _Rust_
 
 > WordBlitz self playing bot
 
-![Blitzsolver score against french average](public/blitzsolver.jpg)
+![Blitzsolver score against french average](public/blitzsolver.png)
 
 When I saw my parents play a little scrabble like mobile game, I had the idea of making a bot which plays the game by itself using the scrabble dictionnary (which i had to store in a specific made data structure for lookup performance). Using tesseract to get the board letters into python and using DFS to find the possible words. PYautoGUI was also used to fake mouse inputs and let python play the game on an Android emulator (NOX). This project taught me python oop, aswell as OCR and pyautogui + it was the early introduction to data structures and algorithmic optimisation for me.
 
@@ -143,7 +144,7 @@ _vuejs, html, css, figma_
 
 `DONE`
 
-> A twitter bot which notifies you on your phone when an Exotic Armor piece was put up for sale in the ingame auction house of Hypixel Skyblock
+> A twitter bot which notifies you when an exotic armor piece is up for sale
 
 ![Exotic twitter bot feed](public/exotic_bot.png)
 
@@ -179,9 +180,9 @@ _javascript_
 
 `DONE`
 
-> A bot which notifies you through twitter when your favorite sneakers are for sale
+> A twitter notification bot for nike.com
 
-![Aerospace720](public/jordans.jpg)
+![Aerospace720](public/nike_sniper.png)
 
 When I missed the occasion to buy a pair of sneakers I wanted, I decided to make a bot that would send me a notification on my phone when this exact pair would come back for sale on nike's official website. I reused my twitter bot code from the Exotic twitter bot, and learned how to scrap a website using beautiful soup, and with some python code I made a working twitter bot to notify me when my favorite sneakers pair would come back for sale (spoiler, I wear them everyday).
 
@@ -215,7 +216,7 @@ Exotic Café is the discord community I created for the game Hypixel Skyblock, i
 
 **2020-2022**
 
-_adobe illustrator, communication_
+_adobe illustrator, social_
 
 # People who helped me on my journey to become a developper (they all agreed to have their names here)
 

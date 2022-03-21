@@ -27,12 +27,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col items-center text-center p-10 justify-center">
+  <div
+    class="flex flex-col items-center text-center md:px-10 justify-start w-60 mb-20 md:h-96 last-of-type:mb-10"
+  >
     <!-- TODO: create WorkView View -->
     <!-- TODO: add router push to WorkView with props as params -->
 
     <img
-      class="inset-0 w-60 h-30 0 object-contain rounded-lg hover:cursor-pointer"
+      class="inset-0 h-30 object-contain rounded-lg hover:cursor-pointer"
       @click="viewItem()"
       :src="images[0]"
       alt=""
