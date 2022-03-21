@@ -32,7 +32,7 @@ defineProps({
     <!-- TODO: add router push to WorkView with props as params -->
 
     <img
-      class="inset-0 w-60 h-30 object-none rounded-lg hover:cursor-pointer"
+      class="inset-0 w-60 h-30 0 object-contain rounded-lg hover:cursor-pointer"
       @click="viewItem()"
       :src="images[0]"
       alt=""

@@ -145,7 +145,7 @@ _vuejs, html, css, figma_
 
 > A twitter bot which notifies you on your phone when an Exotic Armor piece was put up for sale in the ingame auction house of Hypixel Skyblock
 
-![Exotic twitter bot feed](public/exotic_escobar.png)
+![Exotic twitter bot feed](public/exotic_bot.png)
 
 At the beginning of the exotic armor hunt era, players didn't have any ways of tracking the rare armor pieces, some where put up for sale on the ingame auction house amongst the normal pieces. I had the idea of making a twitter bot which we would follow to get notifications and be able to get the pieces off the auction house quickly after they were put up for sale. I learned to work with twitter bot api in python aswell as python requests and the json format here too.
 
@@ -195,7 +195,7 @@ _python, beatifulsoup4, twitter api_
 
 > A simple flappy bird like mobile game
 
-![Stairs.io](public/stairsio.jpg)
+![Stairs.io](public/stairsio.png)
 
 Stairs.io is my first mobile game, I created it for education purposes and learned c# while making it aswell as Unity.
 

@@ -69,7 +69,7 @@ var data = [
     name: "Exotic twitter bot",
     status: "DONE",
     desc: "A twitter bot which notifies you on your phone when an Exotic Armor piece was put up for sale in the ingame auction house of Hypixel Skyblock",
-    images: ["exotic_escobar.png"],
+    images: ["exotic_bot.png"],
     text: "At the beginning of the exotic armor hunt era, players didn't have any ways of tracking the rare armor pieces, some where put up for sale on the ingame auction house amongst the normal pieces. I had the idea of making a twitter bot which we would follow to get notifications and be able to get the pieces off the auction house quickly after they were put up for sale. I learned to work with twitter bot api in python aswell as python requests and the json format here too.",
     date: "2020 december",
     skills: ["python", "twitter api"],
@@ -105,7 +105,7 @@ var data = [
     name: "Stairs.io",
     status: "DONE",
     desc: "A simple flappy bird like mobile game",
-    images: ["stairsio.jpg"],
+    images: ["stairsio.png", "stairsio.jpg"],
     text: "Stairs.io is my first mobile game, I created it for education purposes and learned c# while making it aswell as Unity.",
     date: "2020",
     skills: ["unity", "c#"],
@@ -123,7 +123,7 @@ var data = [
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center mt-10">
     <div class="flex justify-start items-center flex-col">
       <h1
         class="text-4xl md:pb-5 font-bold text-gray-800 dark:text-gray-50 mb-5 underline decoration-mandy-700 decoration-4 underline-offset-8"

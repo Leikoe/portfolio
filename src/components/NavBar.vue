@@ -2,9 +2,7 @@
 import { RouterView } from "vue-router";
 
 var isDark = true;
-isDark
-  ? document.body.classList.add("dark")
-  : document.body.classList.remove("dark");
+document.body.classList.add("dark");
 
 function darkModeSwitch(val) {
   isDark = !isDark;
@@ -19,6 +17,10 @@ import { computed } from "vue";
 const route = useRoute();
 
 const path = computed(() => route.path);
+
+function moveUp() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 </script>
 
 <template>
@@ -29,7 +31,7 @@ const path = computed(() => route.path);
       class="flex items-center justify-between text-2xl md:p-5 md:w-2/3 w-full p-2"
     >
       <div class="flex items-center underline-offset-8">
-        <RouterLink to="/" class="font-bold mr-5">
+        <RouterLink to="/" class="font-bold mr-5" @click="moveUp">
           <div class="flex items-center w-fit">
             <img
               class="w-12 md:w-16 bg-transparent px-3 crisp"
@@ -37,10 +39,10 @@ const path = computed(() => route.path);
               alt=""
             />
             <h1
-              class="font-bold"
+              class="font-bold transition-all delay-75 ease-in-out decoration-mandy-700/0"
               :class="
                 path == '/'
-                  ? 'md:underline decoration-mandy-700 decoration-4'
+                  ? 'md:underline decoration-mandy-700/100 decoration-4'
                   : ''
               "
             >
@@ -50,22 +52,24 @@ const path = computed(() => route.path);
         </RouterLink>
         <RouterLink
           to="/works"
-          class="hidden md:inline mx-5"
+          class="hidden md:inline mx-5 transition-all delay-75 ease-in-out decoration-mandy-700/0"
           :class="
             path == '/works'
-              ? 'md:underline decoration-mandy-700 decoration-4'
+              ? 'md:underline decoration-mandy-700/100 decoration-4'
               : ''
           "
+          @click="moveUp"
           >my works</RouterLink
         >
         <RouterLink
           to="/contact"
-          class="hidden md:inline mx-5"
+          class="hidden md:inline mx-5 transition-all delay-75 ease-in-out decoration-mandy-700/0"
           :class="
             path == '/contact'
-              ? 'md:underline decoration-mandy-700 decoration-4'
+              ? 'md:underline decoration-mandy-700/100 decoration-4'
               : ''
           "
+          @click="moveUp"
           >contact</RouterLink
         >
       </div>

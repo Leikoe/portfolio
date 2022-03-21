@@ -63,10 +63,12 @@ function copy(data) {
         class="underline text-2xl font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
         >Socials</span
       >
-      <div class="text-mandy-300 fill-mandy-300 text-md">
+      <div
+        class="text-mandy-400 dark:text-mandy-300 fill-mandy-400 dark:fill-mandy-300 text-md"
+      >
         <ul class="">
           <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300"
+            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
           >
             <a href="https://twitter.com/Leik0w0">
               <svg
@@ -85,7 +87,7 @@ function copy(data) {
           </li>
 
           <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300"
+            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
           >
             <a @click="copy('Leiko#9999')" class="group">
               <svg
@@ -107,7 +109,7 @@ function copy(data) {
           </li>
 
           <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300"
+            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
           >
             <a href="https://discord.gg/dye">
               <svg
@@ -141,6 +143,26 @@ function copy(data) {
                 ></path>
               </svg>
               <p class="inline-block">@Leikoe</p>
+            </a>
+          </li>
+
+          <li
+            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300"
+          >
+            <a href="https://github.com/Leikoe">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline-block mr-2"
+                height="1em"
+                width="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
+                />
+              </svg>
+              <p class="inline-block">leo.paille@etu.u-bordeaux.fr</p>
             </a>
           </li>
         </ul>
