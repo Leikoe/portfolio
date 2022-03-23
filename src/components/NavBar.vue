@@ -28,11 +28,11 @@ function moveUp() {
     class="sticky top-0 z-50 w-full flex justify-center dark:bg-gray-800/70 bg-gray-50/70"
   >
     <div
-      class="flex items-center justify-between text-2xl md:p-5 md:w-2/3 w-full p-2"
+      class="flex items-center justify-between text-2xl w-full lg:w-3/4 p-2 lg:px-0"
     >
       <div class="flex items-center underline-offset-8">
         <RouterLink to="/" class="font-bold mr-5" @click="moveUp">
-          <div class="flex items-center w-fit">
+          <div class="flex items-center">
             <img
               class="w-12 md:w-16 bg-transparent px-3 crisp"
               src="/favicon.ico"
@@ -76,7 +76,7 @@ function moveUp() {
 
       <div
         @click="darkModeSwitch()"
-        class="border-2 rounded-lg p-1 border-mandy-700 m-2"
+        class="border-2 rounded-lg p-1 border-mandy-700 m-2 lg:m-0"
       >
         <img class="block dark:hidden" src="/dark_mode_black_24dp.svg" alt="" />
         <img

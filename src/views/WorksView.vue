@@ -127,16 +127,16 @@ var data = [
 
 <template>
   <div
-    class="flex flex-col justify-center items-center mt-10 lg:w-1/2 lg:p-10 w-full"
+    class="flex flex-col justify-center items-center mt-10 xl:w-1/2 xl:py-10 w-full"
   >
     <div class="flex justify-start items-center flex-col w-full">
       <h1
-        class="text-4xl lg:pb-5 font-bold text-gray-800 dark:text-gray-50 mb-10 lg:mb-5 underline decoration-mandy-700 decoration-4 underline-offset-8"
+        class="text-4xl xl:pb-5 font-bold text-gray-800 dark:text-gray-50 mb-10 xl:mb-5 underline decoration-mandy-700 decoration-4 underline-offset-8"
       >
         My works
       </h1>
       <div
-        class="flex flex-col lg:flex-row lg:justify-between items-center flex-wrap justify-start w-full mt-10"
+        class="flex flex-col xl:flex-row xl:justify-between items-center flex-wrap justify-start w-full mt-10"
       >
         <PortfolioItem
           v-for="item in data"
@@ -148,7 +148,7 @@ var data = [
           v-bind:text="item.text"
           v-bind:date="item.date"
           v-bind:skills="item.skills"
-          class="lg:my-2"
+          class="lg:p-2 lg:w-1/2"
         ></PortfolioItem>
       </div>
     </div>

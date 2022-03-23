@@ -33,7 +33,7 @@ defineProps({
 <template>
   <!-- main content scroll container -->
   <content class="flex flex-col w-full items-center text-lg">
-    <div class="lg:w-1/3 m-5">
+    <div class="xl:w-1/2 m-5">
       <a
         @click="$router.back()"
         class="text-mandy-300 inline-block pr-1 cursor-pointer hover:underline underline-offset-4 text-lg"

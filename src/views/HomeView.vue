@@ -9,48 +9,46 @@ function copy(data) {
 <template>
   <!-- main content scroll container -->
   <content
-    class="flex flex-col justify-start lg:justify-between lg:p-10 space-y-20 lg:space-y-30 pt-0 items-center font-mono"
+    class="flex flex-col justify-start xl:justify-between xl:py-10 space-y-20 xl:space-y-30 pt-0 items-center font-mono"
   >
     <!-- Hi -->
     <div
-      class="flex flex-col lg:flex-row justify-start lg:justify-between items-center w-full lg:min-h-screen"
+      class="flex flex-col xl:flex-row justify-start xl:justify-between items-center w-full xl:min-h-screen"
     >
-      <div class="w-1/2 lg:hidden m-10">
+      <div class="w-1/2 xl:hidden m-10">
         <img class="rounded-full" src="/pfp.png" alt="" />
       </div>
 
-      <div class="flex justify-start items-center lg:basis-1/2 w-full">
-        <h1 class="flex flex-col lg:p-5">
+      <div class="flex justify-start items-center xl:basis-1/2 w-full">
+        <h1 class="flex flex-col xl:p-5">
           <Transition enter-active-class="opacity-100" enter-from="opacity-0">
             <span
-              class="text-2xl lg:text-9xl lg:pb-5 font-bold transition-all delay-75 ease-in-out"
-              >Hi,<br class="hidden lg:block" />
+              class="text-2xl xl:text-9xl xl:pb-5 font-bold transition-all delay-75 ease-in-out"
+              >Hi,<br class="hidden xl:block" />
               I'm
               <span class="text-mandy-700 font-bold">Léo</span>.</span
             >
           </Transition>
 
-          <span class="text:lg lg:text-6xl no-underline font-thin"
+          <span class="text:lg xl:text-6xl no-underline font-thin"
             >backend developper</span
           >
         </h1>
       </div>
 
       <img
-        class="hidden lg:block basis-1/2 w-96"
+        class="hidden xl:block basis-1/2 w-96"
         src="@/assets/computer_illustration.svg"
         alt=""
       />
     </div>
 
-    <div class="w-full lg:w-1/2 lg:p-10 pt-0 !mt-5">
+    <div class="w-full xl:w-1/2 xl:py-10 pt-0 !mt-5">
       <span
-        class="underline text-2xl font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
+        class="underline text-lg font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
         >Bio</span
       ><br />
-      <h1
-        class="indent-5 text-justify text-lg lg:text-2xl leading-snug font-thin tracking-tight"
-      >
+      <h1 class="indent-5 text-justify leading-snug font-thin tracking-tight">
         I'm a french developper based in Bordeaux. I started algorithms at 8 and
         started coding at 10 years old, but stopped to play games a year or two
         after. I've been learning science since then, but in 2017-2018 I started
@@ -58,13 +56,13 @@ function copy(data) {
       </h1>
     </div>
 
-    <div class="w-full lg:w-1/2 lg:p-10 pt-0 !mt-5">
+    <div class="w-full xl:w-1/2 xl:py-10 pt-0 !mt-5">
       <span
-        class="underline text-2xl font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
+        class="underline text-lg font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
         >Socials</span
       >
       <div
-        class="text-mandy-400 dark:text-mandy-300 fill-mandy-400 dark:fill-mandy-300 text-lg"
+        class="text-mandy-400 dark:text-mandy-300 fill-mandy-400 dark:fill-mandy-300"
       >
         <ul class="">
           <li
