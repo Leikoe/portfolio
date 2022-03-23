@@ -6,6 +6,13 @@ import WorkView from "../views/WorkView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior(to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ top: 0, behavior: "smooth" });
+      }, 500);
+    });
+  },
   routes: [
     {
       path: "/",
