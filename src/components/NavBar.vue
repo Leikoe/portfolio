@@ -92,5 +92,8 @@ function moveUp() {
 <style scoped>
 .crisp {
   image-rendering: crisp-edges;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
 }
 </style>
