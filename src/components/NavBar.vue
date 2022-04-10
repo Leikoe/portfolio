@@ -25,24 +25,24 @@ function moveUp() {
 
 <template>
   <nav
-    class="sticky top-0 z-50 w-full flex justify-center dark:bg-gray-800/70 bg-gray-50/70 backdrop-blur-sm"
+    class="sticky top-0 z-50 flex w-full justify-center bg-gray-50/70 backdrop-blur-sm dark:bg-gray-800/70"
   >
     <div
-      class="flex items-center justify-between text-2xl w-full lg:w-3/4 p-2 lg:px-0"
+      class="flex w-full items-center justify-between p-2 text-2xl lg:w-3/4 lg:px-0"
     >
       <div class="flex items-center underline-offset-8">
-        <RouterLink to="/" class="font-bold mr-5" @click="moveUp">
+        <RouterLink to="/" class="mr-5 font-bold" @click="moveUp">
           <div class="flex items-center">
             <img
-              class="w-12 md:w-16 bg-transparent px-3 crisp"
+              class="bg-transparent crisp w-12 px-3 md:w-16"
               src="/favicon.ico"
               alt=""
             />
             <h1
-              class="font-bold transition-all delay-75 ease-in-out decoration-mandy-700/0"
+              class="font-bold decoration-mandy-700/0 transition-all delay-75 ease-in-out"
               :class="
                 path == '/'
-                  ? 'md:underline decoration-mandy-700/100 decoration-4'
+                  ? 'decoration-mandy-700/100 decoration-4 md:underline'
                   : ''
               "
             >
@@ -52,10 +52,10 @@ function moveUp() {
         </RouterLink>
         <RouterLink
           to="/works"
-          class="hidden md:inline mx-5 transition-all delay-75 ease-in-out decoration-mandy-700/0"
+          class="mx-5 inline decoration-mandy-700/0 transition-all delay-75 ease-in-out md:inline"
           :class="
             path == '/works'
-              ? 'md:underline decoration-mandy-700/100 decoration-4'
+              ? 'decoration-mandy-700/100 decoration-4 md:underline'
               : ''
           "
           @click="moveUp"
@@ -63,10 +63,10 @@ function moveUp() {
         >
         <RouterLink
           to="/contact"
-          class="hidden md:inline mx-5 transition-all delay-75 ease-in-out decoration-mandy-700/0"
+          class="mx-5 hidden decoration-mandy-700/0 transition-all delay-75 ease-in-out md:inline"
           :class="
             path == '/contact'
-              ? 'md:underline decoration-mandy-700/100 decoration-4'
+              ? 'decoration-mandy-700/100 decoration-4 md:underline'
               : ''
           "
           @click="moveUp"
@@ -76,7 +76,7 @@ function moveUp() {
 
       <div
         @click="darkModeSwitch()"
-        class="border-2 rounded-lg p-1 border-mandy-700 m-2 lg:m-0"
+        class="m-2 rounded-lg border-2 border-mandy-700 p-1 lg:m-0"
       >
         <img class="block dark:hidden" src="/dark_mode_black_24dp.svg" alt="" />
         <img

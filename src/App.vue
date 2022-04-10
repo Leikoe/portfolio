@@ -1,21 +1,65 @@
 <script setup>
 import { RouterView } from "vue-router";
 import NavBar from "@/components/NavBar.vue";
+import { useMotions } from "@vueuse/motion";
 </script>
 
 <template>
   <main
-    class="flex flex-col justify-start items-center bg-eyesaver dark:bg-gray-800 min-h-screen text-gray-700 dark:text-gray-50 text-base"
+    class="flex min-h-screen flex-col items-center justify-start bg-eyesaver text-base text-gray-700 dark:bg-gray-800 dark:text-gray-50"
   >
     <nav-bar />
-    <div class="flex flex-col items-center w-3/4">
+    <div class="flex w-3/4 flex-col items-center">
+      <div class="m-10 w-1/2 lg:mb-0 lg:w-1/6">
+        <img class="rounded-full" src="/pfp.png" alt="" />
+      </div>
+
       <router-view v-slot="{ Component }">
-        <transition name="fade">
-          <component :is="Component" />
+        <transition
+          :css="false"
+          v-on:leave="(el, done) => useMotions().main.leave(done)"
+        >
+          <component
+            class="font-mono lg:w-2/5"
+            :is="Component"
+            v-motion="'main'"
+            :initial="{
+              opacity: 0,
+              y: 20,
+            }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                y: {
+                  delay: 500,
+                  duration: 1000,
+                },
+                opacity: {
+                  delay: 900,
+                  duration: 500,
+                },
+              },
+            }"
+            :leave="{
+              y: 20,
+              opacity: 0,
+              transition: {
+                y: {
+                  delay: 0,
+                  duration: 1000,
+                },
+                opacity: {
+                  delay: 200,
+                  duration: 500,
+                },
+              },
+            }"
+          ></component>
         </transition>
       </router-view>
 
-      <h1 class="mb-5 dark:text-gray-50 text-gray-700">
+      <h1 class="mb-5 text-gray-700/50 dark:text-gray-50/50">
         © 2022 Leiko. All Rights Reserved.
       </h1>
     </div>
@@ -24,18 +68,4 @@ import NavBar from "@/components/NavBar.vue";
 
 <style>
 @import "@/assets/base.css";
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter-to,
-.fade-leave {
-  transform: none;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-.fade-enter {
-  transform: translate(10, 0, 0);
-}
 </style>

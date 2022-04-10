@@ -1,6 +1,15 @@
 <script setup>
 import PortfolioItem from "@/components/PortfolioItem.vue";
 
+defineProps({
+  max: {
+    type: Number,
+  },
+  header: {
+    type: String,
+  },
+});
+
 var data = [
   {
     name: "Stonks",
@@ -126,20 +135,18 @@ var data = [
 </script>
 
 <template>
-  <div
-    class="flex flex-col justify-center items-center mt-10 xl:w-1/2 xl:py-10 w-full"
-  >
-    <div class="flex justify-start items-center flex-col w-full">
+  <div class="flex w-full flex-col items-center justify-center xl:py-10">
+    <div class="flex w-full flex-col items-center justify-start">
       <h1
-        class="text-4xl xl:pb-5 font-bold text-gray-800 dark:text-gray-50 mb-10 xl:mb-5 underline decoration-mandy-700 decoration-4 underline-offset-8"
+        class="mb-10 text-4xl font-bold text-gray-800 underline decoration-mandy-700 decoration-4 underline-offset-8 dark:text-gray-50 xl:mb-5 xl:pb-5"
       >
-        My works
+        {{ header ? header : "My works" }}
       </h1>
       <div
-        class="flex flex-col xl:flex-row xl:justify-between items-center flex-wrap justify-start w-full mt-10"
+        class="mt-10 flex w-full flex-col flex-wrap items-center justify-start xl:flex-row xl:justify-between"
       >
         <PortfolioItem
-          v-for="item in data"
+          v-for="item in data.slice(0, max ? max : data.length)"
           :key="item.date"
           v-bind:name="item.name"
           v-bind:status="item.status"
@@ -148,7 +155,7 @@ var data = [
           v-bind:text="item.text"
           v-bind:date="item.date"
           v-bind:skills="item.skills"
-          class="lg:p-2 lg:w-1/2"
+          class="lg:w-1/2 lg:p-2"
         ></PortfolioItem>
       </div>
     </div>

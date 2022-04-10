@@ -32,24 +32,28 @@ defineProps({
 
 <template>
   <!-- main content scroll container -->
-  <content class="flex flex-col w-full items-center text-lg">
-    <div class="xl:w-1/2 m-5">
-      <a
-        @click="$router.back()"
-        class="text-mandy-300 inline-block pr-1 cursor-pointer hover:underline underline-offset-4 text-lg"
-        >Works</a
+  <content class="m-5 flex w-full flex-col items-center text-lg">
+    <div class="m-5">
+      <!-- @click="$router.back()" -->
+
+      <RouterLink
+        to="/works"
+        class="inline-block cursor-pointer pr-1 text-lg text-mandy-300 underline-offset-4 hover:underline"
+        >Works</RouterLink
       >
+
       >
-      <h1 class="inline-block font-bold px-1 text-xl">{{ name }}</h1>
-      <h1 class="bg-mandy-300 inline-block px-1 rounded-lg text-xs mx-1">
+
+      <h1 class="inline-block px-1 text-xl font-bold">{{ name }}</h1>
+      <h1 class="mx-1 inline-block rounded-lg bg-mandy-300 px-1 text-xs">
         {{ date }}
       </h1>
 
-      <div class="flex flex-wrap w-full mb-5">
+      <div class="mb-5 flex w-full flex-wrap">
         <div
           v-for="skill in skills"
           :key="skill"
-          class="text-xs font-normal text-gray-200 dark:text-gray-700 px-1.5 bg-gray-600 dark:bg-gray-200 rounded-lg mx-1 py-0.5 my-1"
+          class="mx-1 my-1 rounded-lg bg-gray-600 px-1.5 py-0.5 text-xs font-normal text-gray-200 dark:bg-gray-200 dark:text-gray-700"
         >
           <h1>
             {{ skill }}
@@ -57,17 +61,17 @@ defineProps({
         </div>
       </div>
 
-      <p class="text-justify text-xl my-5">{{ desc }}</p>
+      <p class="my-5 text-justify text-xl">{{ desc }}</p>
 
-      <p class="indent-5 text-justify">{{ text }}</p>
+      <p class="text-justify indent-5">{{ text }}</p>
 
-      <div class="flex flex-col items-center my-5 space-y-5">
+      <div class="my-5 flex flex-col items-center space-y-5">
         <img
           v-for="image in images"
           :key="image"
           :src="'/' + image"
           alt=""
-          class="inset-0 w-full object-cover rounded-lg hover:cursor-pointer"
+          class="inset-0 w-full rounded-lg object-cover hover:cursor-pointer"
         />
       </div>
     </div>

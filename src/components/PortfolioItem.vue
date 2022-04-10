@@ -27,25 +27,23 @@ defineProps({
 </script>
 
 <template>
-  <div
-    class="flex flex-col items-center text-center justify-start mb-20 xl:h-96"
-  >
+  <div class="flex flex-col items-center justify-start text-center xl:h-96">
     <!-- TODO: create WorkView View -->
     <!-- TODO: add router push to WorkView with props as params -->
 
     <img
-      class="inset-0 h-30 object-contain rounded-lg hover:cursor-pointer"
+      class="h-30 inset-0 rounded-lg object-contain hover:cursor-pointer"
       @click="viewItem()"
       :src="images[0]"
       alt=""
     />
     <h1 class="pt-4 text-lg">{{ name }}</h1>
     <h1 class="font-thin">{{ desc }}</h1>
-    <div class="flex my-2 flex-wrap w-full h-20">
+    <div class="my-2 flex h-20 w-full flex-wrap">
       <div
         v-for="skill in skills"
         :key="skill"
-        class="text-sm font-normal text-gray-200 px-1.5 bg-gray-600 dark:bg-mandy-600 rounded-lg mx-1 py-0.5 my-1 h-6"
+        class="mx-1 my-1 h-6 rounded-lg bg-gray-600 px-1.5 py-0.5 text-sm font-normal text-gray-200 dark:bg-mandy-600"
       >
         <h1>
           {{ skill }}

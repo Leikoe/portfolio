@@ -8,47 +8,21 @@ function copy(data) {
 
 <template>
   <!-- main content scroll container -->
-  <content
-    class="flex flex-col justify-start xl:justify-between xl:py-10 space-y-20 xl:space-y-30 pt-0 items-center font-mono"
-  >
-    <!-- Hi -->
-    <div
-      class="flex flex-col xl:flex-row justify-start xl:justify-between items-center w-full xl:min-h-screen"
-    >
-      <div class="w-1/2 xl:hidden m-10">
-        <img class="rounded-full" src="/pfp.png" alt="" />
+  <content class="flex flex-col justify-start py-3">
+    <div class="flex h-28 justify-between">
+      <div>
+        <h1 class="text-4xl font-bold">Léo Paillé</h1>
+        <h2>Backend developper (Conception/optimisation)</h2>
       </div>
-
-      <div class="flex justify-start items-center xl:basis-1/2 w-full">
-        <h1 class="flex flex-col xl:p-5">
-          <Transition enter-active-class="opacity-100" enter-from="opacity-0">
-            <span
-              class="text-2xl xl:text-9xl xl:pb-5 font-bold transition-all delay-75 ease-in-out"
-              >Hi,<br class="hidden xl:block" />
-              I'm
-              <span class="text-mandy-700 font-bold">Léo</span>.</span
-            >
-          </Transition>
-
-          <span class="text:lg xl:text-6xl no-underline font-thin"
-            >backend developper</span
-          >
-        </h1>
-      </div>
-
-      <img
-        class="hidden xl:block basis-1/2 w-96"
-        src="@/assets/computer_illustration.svg"
-        alt=""
-      />
+      <img class="m-2 h-24 rounded-full border-2" src="/pfp.png" alt="" />
     </div>
 
-    <div class="w-full xl:w-1/2 xl:py-10 pt-0 !mt-5">
+    <div class="py-3">
       <span
-        class="underline text-lg font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
+        class="inline-block py-2 text-xl font-bold underline decoration-gray-500 decoration-4 underline-offset-4"
         >Bio</span
       ><br />
-      <h1 class="indent-5 text-justify leading-snug font-thin tracking-tight">
+      <h1 class="text-justify indent-5 font-thin leading-snug tracking-tight">
         I'm a french developper based in Bordeaux. I started algorithms at 8 and
         started coding at 10 years old, but stopped to play games a year or two
         after. I've been learning science since then, but in 2017-2018 I started
@@ -56,21 +30,21 @@ function copy(data) {
       </h1>
     </div>
 
-    <div class="w-full xl:w-1/2 xl:py-10 pt-0 !mt-5">
+    <div class="py-3">
       <span
-        class="underline text-lg font-bold underline-offset-4 decoration-4 py-2 inline-block decoration-gray-500"
+        class="inline-block py-2 text-xl font-bold underline decoration-gray-500 decoration-4 underline-offset-4"
         >Socials</span
       >
       <div
-        class="text-mandy-400 dark:text-mandy-300 fill-mandy-400 dark:fill-mandy-300"
+        class="fill-mandy-400 text-mandy-400 dark:fill-mandy-300 dark:text-mandy-300"
       >
-        <ul class="">
-          <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
+        <ul>
+          <!-- <li
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
           >
             <a href="https://twitter.com/Leik0w0">
               <svg
-                class="inline-block mr-2"
+                class="mr-2 inline-block"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,14 +56,14 @@ function copy(data) {
               </svg>
               <p class="inline-block">@Leik0w0</p>
             </a>
-          </li>
+          </li> -->
 
           <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
           >
             <a @click="copy('Leiko#9999')" class="group">
               <svg
-                class="inline-block mr-2"
+                class="mr-2 inline-block"
                 viewBox="0 0 71 55"
                 height="1em"
                 width="1em"
@@ -107,11 +81,11 @@ function copy(data) {
           </li>
 
           <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
           >
             <a href="https://discord.gg/dye">
               <svg
-                class="inline-block mr-2"
+                class="mr-2 inline-block"
                 viewBox="0 0 71 55"
                 height="1em"
                 width="1em"
@@ -126,11 +100,11 @@ function copy(data) {
           </li>
 
           <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
           >
             <a href="https://github.com/Leikoe">
               <svg
-                class="inline-block mr-2"
+                class="mr-2 inline-block"
                 viewBox="0 0 512 512"
                 height="1em"
                 width="1em"
@@ -145,12 +119,12 @@ function copy(data) {
           </li>
 
           <li
-            class="p-2 px-4 rounded-lg hover:bg-mandy-300/30 w-fit active:bg-mandy-300/30 flex items-center font-bold transition-all duration-300 my-1"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
           >
             <a href="https://github.com/Leikoe">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="inline-block mr-2"
+                class="mr-2 inline-block"
                 height="1em"
                 width="1em"
                 viewBox="0 0 24 24"
@@ -167,7 +141,7 @@ function copy(data) {
       </div>
     </div>
 
-    <WorksView />
+    <WorksView max="2" header="Featured projects" class="mt-5 !p-0" />
   </content>
 </template>
 
