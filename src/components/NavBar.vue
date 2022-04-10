@@ -25,7 +25,7 @@ function moveUp() {
 
 <template>
   <nav
-    class="sticky top-0 z-50 w-full flex justify-center dark:bg-gray-800/70 bg-gray-50/70"
+    class="sticky top-0 z-50 w-full flex justify-center dark:bg-gray-800/70 bg-gray-50/70 backdrop-blur-sm"
   >
     <div
       class="flex items-center justify-between text-2xl w-full lg:w-3/4 p-2 lg:px-0"
