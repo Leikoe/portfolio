@@ -32,8 +32,8 @@ defineProps({
 
 <template>
   <!-- main content scroll container -->
-  <content class="m-5 flex w-full flex-col items-center text-lg">
-    <div class="m-5">
+  <content class="my-5 flex w-full flex-col items-center text-lg">
+    <div class="my-5">
       <!-- @click="$router.back()" -->
 
       <RouterLink
