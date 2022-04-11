@@ -12,20 +12,19 @@ import { useMotions } from "@vueuse/motion";
     <nav-bar class="z-20" />
     <div class="flex w-3/4 flex-col items-center">
       <!-- credits to craftzdog -->
-      <!-- <VoxelPfp class="z-10 flex w-1/2 justify-center"></VoxelPfp> -->
+      <VoxelPfp class="z-10 flex w-1/2 justify-center"></VoxelPfp>
 
-      <div class="m-10 w-1/2 sm:w-1/6 lg:mb-0">
+      <!-- <div class="m-10 w-1/2 sm:w-1/6 lg:mb-0">
         <img class="rounded-full" src="/pfp.png" alt="" />
-      </div>
+      </div> -->
 
       <router-view v-slot="{ Component }">
         <transition
           :css="false"
           v-on:leave="(el, done) => useMotions().main.leave(done)"
         >
-          <!-- relative -top-32 -->
           <component
-            class="z-20 max-w-prose font-mono"
+            class="relative -top-32 z-20 max-w-prose font-mono"
             :is="Component"
             v-motion="'main'"
             :initial="{

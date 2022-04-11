@@ -42,7 +42,7 @@ onMounted(() => {
   container.appendChild(_renderer.domElement);
   renderer = _renderer;
 
-  const scale = scH * 0.005 + 4.8;
+  const scale = scH * 0.001 + 4.8;
   const _camera = new THREE.OrthographicCamera(
     -scale,
     scale,
@@ -63,7 +63,7 @@ onMounted(() => {
   _controls.target = target;
   controls = _controls;
 
-  loadGLTFModel(scene, "/dog.glb", {
+  loadGLTFModel(scene, "/pfp.glb", {
     receiveShadow: false,
     castShadow: false,
   }).then(() => {
