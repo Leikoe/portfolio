@@ -49,11 +49,11 @@ defineProps({
         {{ date }}
       </h1>
 
-      <div class="mb-5 flex w-full flex-wrap">
+      <div class="mb-5 flex w-full flex-wrap space-x-1">
         <div
           v-for="skill in skills"
           :key="skill"
-          class="mx-1 my-1 rounded-lg bg-gray-600 px-1.5 py-0.5 text-xs font-normal text-gray-200 dark:bg-gray-200 dark:text-gray-700"
+          class="my-1 rounded-lg bg-gray-600 px-1.5 py-0.5 text-xs font-normal text-gray-200 dark:bg-gray-200 dark:text-gray-700"
         >
           <h1>
             {{ skill }}

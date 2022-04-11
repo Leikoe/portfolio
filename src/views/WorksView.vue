@@ -138,7 +138,7 @@ var data = [
   <div class="flex w-full flex-col items-center justify-center xl:py-10">
     <div class="flex w-full flex-col items-center justify-start">
       <h1
-        class="mb-10 text-4xl font-bold text-gray-800 underline decoration-mandy-700 decoration-4 underline-offset-8 dark:text-gray-50 xl:mb-5 xl:pb-5"
+        class="mb-10 text-center text-4xl font-bold text-gray-800 underline decoration-mandy-700 decoration-4 underline-offset-8 dark:text-gray-50 xl:mb-5 xl:pb-5"
       >
         {{ header ? header : "My works" }}
       </h1>
