@@ -141,7 +141,7 @@ function copy(data) {
       </div>
     </div>
 
-    <WorksView max="2" header="Featured projects" class="mt-5 !p-0" />
+    <WorksView :max="2" header="Featured projects" class="mt-5 !p-0" />
   </content>
 </template>
 

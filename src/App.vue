@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from "vue-router";
 import NavBar from "@/components/NavBar.vue";
+import VoxelPfp from "@/components/VoxelPfp.vue";
 import { useMotions } from "@vueuse/motion";
 </script>
 
@@ -8,8 +9,11 @@ import { useMotions } from "@vueuse/motion";
   <main
     class="flex min-h-screen flex-col items-center justify-start bg-eyesaver text-base text-gray-700 dark:bg-gray-800 dark:text-gray-50"
   >
-    <nav-bar />
+    <nav-bar class="z-20" />
     <div class="flex w-3/4 flex-col items-center">
+      <!-- credits to craftzdog -->
+      <!-- <VoxelPfp class="z-10 flex w-1/2 justify-center"></VoxelPfp> -->
+
       <div class="m-10 w-1/2 sm:w-1/6 lg:mb-0">
         <img class="rounded-full" src="/pfp.png" alt="" />
       </div>
@@ -19,8 +23,9 @@ import { useMotions } from "@vueuse/motion";
           :css="false"
           v-on:leave="(el, done) => useMotions().main.leave(done)"
         >
+          <!-- relative -top-32 -->
           <component
-            class="max-w-prose font-mono"
+            class="z-20 max-w-prose font-mono"
             :is="Component"
             v-motion="'main'"
             :initial="{
