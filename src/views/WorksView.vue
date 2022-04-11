@@ -155,7 +155,7 @@ var data = [
           v-bind:text="item.text"
           v-bind:date="item.date"
           v-bind:skills="item.skills"
-          class="w-1/2 p-2"
+          class="w-full sm:w-1/2 sm:p-2"
         ></PortfolioItem>
       </div>
     </div>
