@@ -13,7 +13,7 @@ const router = createRouter({
           top: 0,
           // behavior: "smooth"
         });
-      }, 500);
+      }, 0);
     });
   },
   routes: [
