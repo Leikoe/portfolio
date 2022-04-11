@@ -11,10 +11,14 @@ function copy(data) {
   <content class="flex flex-col justify-start py-3">
     <div class="flex h-28 justify-between">
       <div>
-        <h1 class="text-4xl font-bold">Léo Paillé</h1>
+        <h1 class="text-2xl font-bold sm:text-4xl">Léo Paillé</h1>
         <h2>Backend developper (Conception/optimisation)</h2>
       </div>
-      <img class="m-2 h-24 rounded-full border-2" src="/pfp.png" alt="" />
+      <img
+        class="m-2 h-12 rounded-full border-2 sm:h-24"
+        src="/pfp.png"
+        alt=""
+      />
     </div>
 
     <div class="py-3">
