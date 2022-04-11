@@ -143,7 +143,7 @@ var data = [
         {{ header ? header : "My works" }}
       </h1>
       <div
-        class="mt-10 flex w-full flex-col flex-wrap items-center justify-start xl:flex-row xl:justify-between"
+        class="mt-10 flex w-full flex-col flex-wrap items-center justify-start sm:flex-row sm:justify-between"
       >
         <PortfolioItem
           v-for="item in data.slice(0, max ? max : data.length)"
@@ -155,7 +155,7 @@ var data = [
           v-bind:text="item.text"
           v-bind:date="item.date"
           v-bind:skills="item.skills"
-          class="lg:w-1/2 lg:p-2"
+          class="w-1/2 p-2"
         ></PortfolioItem>
       </div>
     </div>

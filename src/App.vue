@@ -10,7 +10,7 @@ import { useMotions } from "@vueuse/motion";
   >
     <nav-bar />
     <div class="flex w-3/4 flex-col items-center">
-      <div class="m-10 w-1/2 lg:mb-0 lg:w-1/6">
+      <div class="m-10 w-1/2 sm:w-1/6 lg:mb-0">
         <img class="rounded-full" src="/pfp.png" alt="" />
       </div>
 

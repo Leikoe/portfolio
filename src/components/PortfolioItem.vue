@@ -27,7 +27,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-start text-center xl:h-96">
+  <div class="flex flex-col items-center justify-start text-center sm:h-96">
     <!-- TODO: create WorkView View -->
     <!-- TODO: add router push to WorkView with props as params -->
 
