@@ -125,7 +125,7 @@ function copy(data) {
           <li
             class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
-            <a href="https://github.com/Leikoe">
+            <a @click="copy('leo.paille@etu.u-bordeaux.fr')">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="mr-2 inline-block"
