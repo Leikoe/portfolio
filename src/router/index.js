@@ -11,9 +11,9 @@ const router = createRouter({
       setTimeout(() => {
         resolve({
           top: 0,
-          // behavior: "smooth"
+          behavior: "smooth",
         });
-      }, 0);
+      }, 900);
     });
   },
   routes: [

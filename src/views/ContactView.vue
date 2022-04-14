@@ -2,7 +2,11 @@
 
 <template>
   <div class="about bg-neutral-100">
-    <h1>This is an about page</h1>
+    <h1>
+      Contacts are on first page, this button is here only because we were asked
+      to add one, it'll be removed asap. In the meanwhile you can take a look at
+      the cool 3d model :)
+    </h1>
   </div>
 </template>
 

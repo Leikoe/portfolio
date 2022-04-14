@@ -44,7 +44,7 @@ function copy(data) {
       >
         <ul>
           <!-- <li
-            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 "
           >
             <a href="https://twitter.com/Leik0w0">
               <svg
@@ -63,7 +63,7 @@ function copy(data) {
           </li> -->
 
           <li
-            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
             <a @click="copy('Leiko#9999')" class="group">
               <svg
@@ -85,7 +85,7 @@ function copy(data) {
           </li>
 
           <li
-            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
             <a href="https://discord.gg/dye">
               <svg
@@ -104,7 +104,7 @@ function copy(data) {
           </li>
 
           <li
-            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
             <a href="https://github.com/Leikoe">
               <svg
@@ -123,7 +123,7 @@ function copy(data) {
           </li>
 
           <li
-            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30 active:bg-mandy-300/30"
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
             <a href="https://github.com/Leikoe">
               <svg
@@ -146,11 +146,24 @@ function copy(data) {
     </div>
 
     <WorksView :max="2" header="Featured projects" class="mt-5 !p-0" />
+    <div class="flex items-center justify-center">
+      <RouterLink
+        id="seemore"
+        to="/works"
+        class="absolute rounded-md bg-mandy-500 px-2 py-1 transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-mandy-400 sm:w-1/4"
+      >
+        <h1 class="text-center">See more ></h1>
+      </RouterLink>
+    </div>
   </content>
 </template>
 
 <style scoped>
 header a {
   color: white;
+}
+/* firefox compatibility ?? */
+#seemore:hover {
+  -moz-transform: scale(110%);
 }
 </style>

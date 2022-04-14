@@ -26,7 +26,7 @@ import { useMotions } from "@vueuse/motion";
           v-on:leave="(el, done) => useMotions().main.leave(done)"
         >
           <component
-            class="relative -top-20 z-20 max-w-prose font-mono sm:-top-48"
+            class="relative z-20 max-w-prose font-mono sm:-top-48"
             :is="Component"
             v-motion="'main'"
             :initial="{
