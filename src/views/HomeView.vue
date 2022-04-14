@@ -152,7 +152,7 @@ function copy(data) {
         to="/works"
         class="absolute rounded-md bg-mandy-500 px-2 py-1 transition delay-150 duration-300 ease-in-out hover:scale-110 hover:bg-mandy-400 sm:w-1/4"
       >
-        <h1 class="text-center">See more ></h1>
+        <h1 class="text-center text-gray-50">See more ></h1>
       </RouterLink>
     </div>
   </content>
