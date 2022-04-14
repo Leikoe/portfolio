@@ -65,7 +65,7 @@ function copy(data) {
           <li
             class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
-            <a @click="copy('Leiko#9999')" class="group">
+            <div @click="copy('Leiko#9999')" class="group">
               <svg
                 class="mr-2 inline-block"
                 viewBox="0 0 71 55"
@@ -81,7 +81,7 @@ function copy(data) {
               <p class="hidden group-active:inline-block">
                 Copied to clipboard !
               </p>
-            </a>
+            </div>
           </li>
 
           <li
@@ -125,7 +125,7 @@ function copy(data) {
           <li
             class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
-            <a @click="copy('leo.paille@etu.u-bordeaux.fr')">
+            <div @click="copy('leo.paille@etu.u-bordeaux.fr')">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="mr-2 inline-block"
@@ -139,7 +139,7 @@ function copy(data) {
                 />
               </svg>
               <p class="inline-block">leo.paille@etu.u-bordeaux.fr</p>
-            </a>
+            </div>
           </li>
         </ul>
       </div>
