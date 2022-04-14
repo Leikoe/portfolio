@@ -10,11 +10,11 @@ import { useMotions } from "@vueuse/motion";
     class="flex min-h-screen flex-col items-center justify-start bg-eyesaver text-base text-gray-700 dark:bg-gray-800 dark:text-gray-50"
   >
     <nav-bar class="z-20" />
-    <div class="relative -top-10 flex w-3/4 flex-col items-center sm:-top-44">
+    <div class="relative flex w-3/4 flex-col items-center">
       <!-- credits to craftzdog -->
-      <VoxelPfp
-        class="z-10 mb-5 flex w-full justify-center overflow-hidden sm:w-1/2"
-      ></VoxelPfp>
+      <div class="flex h-[30vh] w-full justify-center">
+        <VoxelPfp class="z-10 flex w-1/2 justify-center"></VoxelPfp>
+      </div>
 
       <!-- <div class="m-10 w-1/2 sm:w-1/6 lg:mb-0">
         <img class="rounded-full" src="/pfp.png" alt="" />
@@ -26,7 +26,7 @@ import { useMotions } from "@vueuse/motion";
           v-on:leave="(el, done) => useMotions().main.leave(done)"
         >
           <component
-            class="relative z-20 max-w-prose font-mono sm:-top-48"
+            class="relative z-20 max-w-prose font-mono"
             :is="Component"
             v-motion="'main'"
             :initial="{
@@ -65,7 +65,7 @@ import { useMotions } from "@vueuse/motion";
         </transition>
       </router-view>
 
-      <h1 class="mb-5 text-gray-700/50 dark:text-gray-50/50">
+      <h1 class="my-5 text-gray-700/50 dark:text-gray-50/50">
         © 2022 Leiko. All Rights Reserved.
       </h1>
     </div>

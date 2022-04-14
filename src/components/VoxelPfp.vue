@@ -25,8 +25,8 @@ onMounted(() => {
   // the DOM element will be assigned to the ref after initial render
   const container = voxelpfp.value;
 
-  const scW = container.clientWidth;
-  const scH = container.clientWidth;
+  const scW = container.clientHeight;
+  const scH = container.clientHeight;
 
   const _renderer = new THREE.WebGLRenderer({
     antialias: true,
@@ -42,7 +42,7 @@ onMounted(() => {
   container.appendChild(_renderer.domElement);
   renderer = _renderer;
 
-  const scale = scH * 0.001 + 4.8;
+  const scale = scH * 0.001 + 1.8;
   const _camera = new THREE.OrthographicCamera(
     -scale,
     scale,
