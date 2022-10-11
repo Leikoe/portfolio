@@ -61,17 +61,16 @@ function moveUp() {
           @click="moveUp"
           >my works</RouterLink
         >
-        <RouterLink
-          to="/contact"
+        <!-- <RouterLink
+          to="/#Socials"
           class="mx-5 hidden decoration-mandy-700/0 transition-all delay-75 ease-in-out md:inline"
           :class="
             path == '/contact'
               ? 'decoration-mandy-700/100 decoration-4 md:underline'
               : ''
           "
-          @click="moveUp"
           >contact</RouterLink
-        >
+        > -->
       </div>
 
       <div

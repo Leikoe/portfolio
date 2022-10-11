@@ -34,7 +34,7 @@ function copy(data) {
       </h1>
     </div>
 
-    <div class="py-3">
+    <div class="py-3" id="Socials">
       <span
         class="inline-block py-2 text-xl font-bold underline decoration-gray-500 decoration-4 underline-offset-4"
         >Socials</span
@@ -62,7 +62,7 @@ function copy(data) {
             </a>
           </li> -->
 
-          <li
+          <!-- <li
             class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
             <div @click="copy('Leiko#9999')" class="group">
@@ -82,9 +82,9 @@ function copy(data) {
                 Copied to clipboard !
               </p>
             </div>
-          </li>
+          </li> -->
 
-          <li
+          <!-- <li
             class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
             <a href="https://discord.gg/dye">
@@ -101,12 +101,21 @@ function copy(data) {
               </svg>
               <p class="inline-block">Exotic Café</p>
             </a>
+          </li> -->
+          <li
+            class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
+          >
+            <a href="https://linkedin.com/in/leopaille" class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="mr-2 inline-block" ><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <p class="inline-block align-baseline">leopaille</p>
+            </a>
           </li>
+
 
           <li
             class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
-            <a href="https://github.com/Leikoe">
+            <a href="https://github.com/Leikoe" class="flex items-center">
               <svg
                 class="mr-2 inline-block"
                 viewBox="0 0 512 512"
@@ -125,7 +134,7 @@ function copy(data) {
           <li
             class="my-1 flex w-fit items-center rounded-lg p-2 px-4 font-bold transition-all duration-300 hover:bg-mandy-300/30"
           >
-            <div @click="copy('leo.paille@etu.u-bordeaux.fr')">
+            <div @click="copy('leo.paille@etu.u-bordeaux.fr')" class="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="mr-2 inline-block"
