@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./app/**/*.{js,ts,jsx,tsx}'],
+  content: ['./app/**/*.{js,ts,jsx,tsx}', './ui/**/*.{js,ts,jsx,tsx}'],
   plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
@@ -37,7 +37,7 @@ module.exports = {
             '--tw-prose-captions': theme('colors.secondary[700]'),
             '--tw-prose-code': theme('colors.secondary[900]'),
             '--tw-prose-pre-code': theme('colors.secondary[100]'),
-            '--tw-prose-pre-bg': theme('colors.secondary[900]'),
+            '--tw-prose-pre-bg': '#f1f5f5',
             '--tw-prose-th-borders': theme('colors.secondary[300]'),
             '--tw-prose-td-borders': theme('colors.secondary[200]'),
             '--tw-prose-invert-body': theme('colors.secondary[200]'),

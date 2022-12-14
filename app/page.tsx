@@ -1,7 +1,7 @@
 import { demos } from '@/lib/demos';
 import markdownToHtml from '@/lib/markdownToHtml';
 import Link from 'next/link';
-import PostBody from './posts/post-body';
+import PostBody from '@/ui/post-body';
 
 export default async function Page() {
   const stuff = await markdownToHtml('# Lol\n\nhello world');
