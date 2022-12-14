@@ -8,10 +8,10 @@ export default function Footer({
   nextVersion: string;
 }) {
   return (
-    <div className="col-start-2 col-end-4 mt-28 bg-secondary-800 pb-40 text-white">
-      <div className="mx-auto max-w-[1440px] px-4">
-        <div className="flex items-center justify-between pt-24">
-          <span className="flex">
+    <div className="col-start-2 col-end-4 mt-28 bg-secondary-400 pb-40 text-white">
+      <div className="e-container w-container">
+        <div className="flex w-full items-center justify-between pt-24">
+          <span className="flex items-center">
             <span className="mr-3">Powered by</span>
             <svg height="20" viewBox="0 0 283 64" fill="none">
               <path

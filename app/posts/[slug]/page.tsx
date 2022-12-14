@@ -11,12 +11,12 @@ export default async function Posts({ params }: { params: { slug: string } }) {
 
   return (
     <article className="mb-32">
-      {/* <PostHeader
+      <PostHeader
         title={post.title}
         coverImage={post.coverImage}
         date={post.date}
         author={post.author}
-      /> */}
+      />
       <PostBody content={content} />
     </article>
   );

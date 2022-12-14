@@ -4,7 +4,7 @@ type Props = {
 
 export default function PostBody({ content }: Props) {
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto mt-16 max-w-2xl">
       <div
         className="prose prose-secondary dark:prose-invert"
         dangerouslySetInnerHTML={{ __html: content }}

@@ -13,23 +13,41 @@ type Props = {
 
 const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
-    <>
-      <PostTitle>{title}</PostTitle>
-      <div className="hidden md:mb-12 md:block">
-        <Avatar name={author.name} picture={author.picture} />
-      </div>
-      <div className="mb-8 sm:mx-0 md:mb-16">
-        <CoverImage title={title} src={coverImage} />
-      </div>
-      <div className="mx-auto max-w-2xl">
-        <div className="mb-6 block md:hidden">
+    <div className="bg-pink-100">
+      <div className="e-container w-container justify-between gap-8 pt-24">
+        {/* left text col */}
+        <div className="flex basis-1/3 flex-col justify-center">
+          <PostTitle>{title}</PostTitle>
           <Avatar name={author.name} picture={author.picture} />
-        </div>
-        <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
         </div>
+
+        {/* right img col */}
+        <div className="aspect-video">
+          <img
+            src={coverImage}
+            alt={title}
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
+        {/* <PostTitle>{title}</PostTitle>
+        <div className="hidden md:mb-12 md:block">
+          <Avatar name={author.name} picture={author.picture} />
+        </div>
+        <div className="mb-8 sm:mx-0 md:mb-16">
+          <CoverImage title={title} src={coverImage} />
+        </div>
+        <div className="mx-auto max-w-2xl">
+          <div className="mb-6 block md:hidden">
+            <Avatar name={author.name} picture={author.picture} />
+          </div>
+          <div className="mb-6 text-lg">
+            <DateFormatter dateString={date} />
+          </div>
+        </div> */}
       </div>
-    </>
+    </div>
   );
 };
 

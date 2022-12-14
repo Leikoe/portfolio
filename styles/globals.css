@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .e-container {
+    @apply max-w-[1440px];
+    @apply px-7;
+    @apply flex;
+  }
+  .w-container {
+    @apply mx-auto;
+  }
+}

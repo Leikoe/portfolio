@@ -17,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html className={sans.className}>
-      <body className="overflow-y-scroll bg-white text-secondary-400">
+      <body className="overflow-y-scroll bg-white text-lg font-thin leading-relaxed text-secondary-400">
         <NavBar></NavBar>
-        <main className="min-h-screen pt-16 pb-3">{children}</main>
+        <main className="min-h-screen pb-3">{children}</main>
         <Footer reactVersion="18.2" nextVersion="13"></Footer>
       </body>
     </html>
