@@ -1,4 +1,5 @@
 import '@/styles/dist.css';
+import '@/styles/prism-one-light.css';
 import React from 'react';
 import AddressBar from '@/ui/AddressBar';
 import GlobalNav from './GlobalNav';
