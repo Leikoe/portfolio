@@ -3,6 +3,7 @@ import '@/styles/prism-one-light.css';
 import React from 'react';
 import { DM_Sans } from '@next/font/google';
 import NavBar from '@/ui/NavBar';
+import Footer from '@/ui/Footer';
 
 const sans = DM_Sans({
   weight: '400',
@@ -18,7 +19,8 @@ export default function RootLayout({
     <html className={sans.className}>
       <body className="overflow-y-scroll bg-white text-secondary-400">
         <NavBar></NavBar>
-        <main className="pt-16 pb-3">{children}</main>
+        <main className="min-h-screen pt-16 pb-3">{children}</main>
+        <Footer reactVersion="18.2" nextVersion="13"></Footer>
       </body>
     </html>
   );
