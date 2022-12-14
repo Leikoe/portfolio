@@ -1,60 +1,61 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './page/**/*.{js,ts,jsx,tsx}',
-    './ui/**/*.{js,ts,jsx,tsx}',
-  ],
+  darkMode: 'class',
+  content: ['./app/**/*.{js,ts,jsx,tsx}'],
+  plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
-      // https://vercel.com/design/color
       colors: {
-        vercel: {
-          pink: '#FF0080',
-          blue: '#0070F3',
-          cyan: '#50E3C2',
-          orange: '#F5A623',
-          violet: '#7928CA',
+        secondary: {
+          DEFAULT: '#123693',
+          50: '#6F92ED',
+          100: '#5D85EB',
+          200: '#3969E7',
+          300: '#1B51DC',
+          400: '#1643B7',
+          500: '#123693',
+          600: '#0C2461',
+          700: '#06112F',
+          800: '#123693',
+          900: '#123693',
         },
       },
-      keyframes: ({ theme }) => ({
-        rerender: {
-          '0%': {
-            'border-color': theme('colors.vercel.pink'),
-          },
-          '40%': {
-            'border-color': theme('colors.vercel.pink'),
-          },
-        },
-        highlight: {
-          '0%': {
-            background: theme('colors.vercel.pink'),
-            color: theme('colors.white'),
-          },
-          '40%': {
-            background: theme('colors.vercel.pink'),
-            color: theme('colors.white'),
-          },
-        },
-        shimmer: {
-          '100%': {
-            transform: 'translateX(100%)',
-          },
-        },
-        translateXReset: {
-          '100%': {
-            transform: 'translateX(0)',
-          },
-        },
-        fadeToTransparent: {
-          '0%': {
-            opacity: 1,
-          },
-          '40%': {
-            opacity: 1,
-          },
-          '100%': {
-            opacity: 0,
+
+      typography: ({ theme }) => ({
+        secondary: {
+          css: {
+            '--tw-prose-body': theme('colors.secondary[800]'),
+            '--tw-prose-headings': theme('colors.secondary[900]'),
+            '--tw-prose-lead': theme('colors.secondary[700]'),
+            '--tw-prose-links': theme('colors.secondary[900]'),
+            '--tw-prose-bold': theme('colors.secondary[900]'),
+            '--tw-prose-counters': theme('colors.secondary[600]'),
+            '--tw-prose-bullets': theme('colors.secondary[400]'),
+            '--tw-prose-hr': theme('colors.secondary[300]'),
+            '--tw-prose-quotes': theme('colors.secondary[900]'),
+            '--tw-prose-quote-borders': theme('colors.secondary[300]'),
+            '--tw-prose-captions': theme('colors.secondary[700]'),
+            '--tw-prose-code': theme('colors.secondary[900]'),
+            '--tw-prose-pre-code': theme('colors.secondary[100]'),
+            '--tw-prose-pre-bg': theme('colors.secondary[900]'),
+            '--tw-prose-th-borders': theme('colors.secondary[300]'),
+            '--tw-prose-td-borders': theme('colors.secondary[200]'),
+            '--tw-prose-invert-body': theme('colors.secondary[200]'),
+            '--tw-prose-invert-headings': theme('colors.white'),
+            '--tw-prose-invert-lead': theme('colors.secondary[300]'),
+            '--tw-prose-invert-links': theme('colors.white'),
+            '--tw-prose-invert-bold': theme('colors.white'),
+            '--tw-prose-invert-counters': theme('colors.secondary[400]'),
+            '--tw-prose-invert-bullets': theme('colors.secondary[600]'),
+            '--tw-prose-invert-hr': theme('colors.secondary[700]'),
+            '--tw-prose-invert-quotes': theme('colors.secondary[100]'),
+            '--tw-prose-invert-quote-borders': theme('colors.secondary[700]'),
+            '--tw-prose-invert-captions': theme('colors.secondary[400]'),
+            '--tw-prose-invert-code': theme('colors.white'),
+            '--tw-prose-invert-pre-code': theme('colors.secondary[300]'),
+            '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+            '--tw-prose-invert-th-borders': theme('colors.secondary[600]'),
+            '--tw-prose-invert-td-borders': theme('colors.secondary[700]'),
           },
         },
       }),
