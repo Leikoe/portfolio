@@ -5,7 +5,7 @@ type Props = {
 };
 
 const PostTitle = ({ children }: Props) => {
-  return <h1 className="text-2xl">{children}</h1>;
+  return <h1 className="mb-5 text-[28px] text-2xl">{children}</h1>;
 };
 
 export default PostTitle;

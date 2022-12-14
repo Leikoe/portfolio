@@ -1608,6 +1608,10 @@ video {
   padding-top: 6rem;
 }
 
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1647,16 +1651,20 @@ video {
   line-height: 2rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .font-bold {
