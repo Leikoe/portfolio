@@ -7,16 +7,15 @@ module.exports = {
     extend: {
       colors: {
         secondary: {
-          DEFAULT: '#123693',
-          50: '#6F92ED',
-          100: '#5D85EB',
-          200: '#3969E7',
-          300: '#1B51DC',
-          400: '#1643B7',
-          500: '#123693',
-          600: '#0C2461',
-          700: '#06112F',
-          800: '#123693',
+          50: '#edf6ff',
+          100: '#d7eaff',
+          200: '#b8dbff',
+          300: '#88c6ff',
+          400: '#4fa6ff',
+          500: '#2781ff',
+          600: '#1060ff',
+          700: '#0948ec',
+          800: '#0053d6',
           900: '#123693',
         },
       },
@@ -24,7 +23,7 @@ module.exports = {
       typography: ({ theme }) => ({
         secondary: {
           css: {
-            '--tw-prose-body': theme('colors.secondary[800]'),
+            '--tw-prose-body': theme('colors.secondary[900]'),
             '--tw-prose-headings': theme('colors.secondary[900]'),
             '--tw-prose-lead': theme('colors.secondary[700]'),
             '--tw-prose-links': theme('colors.secondary[900]'),

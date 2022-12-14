@@ -1,6 +1,6 @@
 ---
 title: 'About Me'
-coverImage: '/assets/blog/preview/cover.jpg'
+coverImage: '/assets/blog/authors/leo.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Léo Paillé
