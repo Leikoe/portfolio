@@ -23,7 +23,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
         </div>
 
         {/* right img col */}
-        <div className="aspect-video">
+        <div className="max-h-[500px] overflow-hidden">
           <img
             src={coverImage}
             alt={title}

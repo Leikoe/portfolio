@@ -1193,6 +1193,10 @@ video {
   height: 3rem;
 }
 
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1513,6 +1517,11 @@ video {
      object-fit: cover;
 }
 
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1714,6 +1723,14 @@ video {
 
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.tracking-\[\.25em\] {
+  letter-spacing: .25em;
+}
+
+.tracking-\[\.25px\] {
+  letter-spacing: .25px;
 }
 
 .text-zinc-500 {
