@@ -14,7 +14,7 @@ type Props = {
 const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
     <div className="bg-pink-100">
-      <div className="e-container w-container justify-between gap-8 pt-24">
+      <div className="e-container w-container flex-col justify-between gap-8 pt-24 lg:flex-row">
         {/* left text col */}
         <div className="flex basis-1/3 flex-col justify-center">
           <PostTitle>{title}</PostTitle>

@@ -1129,10 +1129,6 @@ video {
   margin-top: 4rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1155,10 +1151,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-40 {
@@ -1640,6 +1632,8 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  letter-spacing: -0.02em;
+  font-weight: 700;
 }
 
 .text-\[9px\] {
@@ -1660,8 +1654,8 @@ video {
 }
 
 .text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 28px;
+  line-height: 130%;
 }
 
 .font-semibold {
@@ -1689,8 +1683,8 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.leading-relaxed {
-  line-height: 1.625;
+.leading-\[160\%\] {
+  line-height: 160%;
 }
 
 .leading-4 {
@@ -2061,22 +2055,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mb-12 {
-    margin-bottom: 3rem;
-  }
-
-  .md\:mb-16 {
-    margin-bottom: 4rem;
-  }
-
-  .md\:block {
-    display: block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:max-w-\[93vw\] {
     max-width: 93vw;
   }
@@ -2103,6 +2081,10 @@ video {
 @media (min-width: 1024px) {
   .lg\:max-w-\[46vw\] {
     max-width: 46vw;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:gap-x-32 {

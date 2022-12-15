@@ -20,6 +20,24 @@ module.exports = {
         },
       },
 
+      fontSize: {
+        '2xl': [
+          '28px',
+          {
+            lineHeight: '130%',
+            fontSize: '28px',
+          },
+        ],
+        '3xl': [
+          '1.875rem',
+          {
+            lineHeight: '2.25rem',
+            letterSpacing: '-0.02em',
+            fontWeight: '700',
+          },
+        ],
+      },
+
       typography: ({ theme }) => ({
         secondary: {
           css: {
