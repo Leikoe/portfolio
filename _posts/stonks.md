@@ -2,11 +2,7 @@
 title: 'Hypixel Skyblock AH flipping bot'
 coverImage: '/assets/blog/stonks/flips.png'
 date: '2020-03-16T05:35:07.322Z'
-author:
-  name: Léo Paillé
-  picture: '/assets/blog/authors/leo.png'
-ogImage:
-  url: '/assets/blog/preview/cover.jpg'
+authors: 'Léo Paillé'
 ---
 
 ### Stonks

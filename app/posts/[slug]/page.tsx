@@ -16,14 +16,14 @@ export default async function Posts({ params }: { params: { slug: string } }) {
         title={post.title}
         coverImage={post.coverImage}
         date={post.date}
-        author={post.author}
+        author={post.authors}
       />
       <PostBody content={content} />
       <PostFooter
         title={post.title}
         coverImage={post.coverImage}
         date={post.date}
-        author={post.author}
+        authors={post.authors}
       />
     </article>
   );

@@ -2,13 +2,12 @@ import Avatar from './avatar';
 import DateFormatter from './date-formatter';
 import CoverImage from './cover-image';
 import PostTitle from './post-title';
-import type Author from '../lib/interfaces/author';
 
 type Props = {
   title: string;
   coverImage: string;
   date: string;
-  author: Author;
+  author: string;
 };
 
 const PostHeader = ({ title, coverImage, date, author }: Props) => {
@@ -18,7 +17,6 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
         {/* left text col */}
         <div className="flex basis-1/3 flex-col justify-center">
           <PostTitle>{title}</PostTitle>
-          {/* <Avatar name={author.name} picture={author.picture} /> */}
           <DateFormatter dateString={date} className="font-mono text-2xs" />
         </div>
 

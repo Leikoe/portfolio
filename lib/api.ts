@@ -20,8 +20,7 @@ export function getPostBySlug(slug: string): Post {
     title: data.title,
     date: data.date,
     coverImage: data.coverImage,
-    author: data.author,
-    ogImage: data.ogImage,
+    authors: data.authors,
     content: content
   }
   
