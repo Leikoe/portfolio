@@ -3,6 +3,7 @@ title: 'Bloom Filter'
 coverImage: 'https://blog.cloudflare.com/content/images/2020/02/bloom-filter@2x.png'
 date: '2020-03-16T05:35:07.322Z'
 authors: 'Léo Paillé'
+featured: true
 ---
 
 # Simple Bloom Filter implementation in java

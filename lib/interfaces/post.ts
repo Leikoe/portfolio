@@ -5,6 +5,7 @@ type PostType = {
   coverImage: string
   authors: string
   content: string
+  featured: boolean
 }
 
 export default PostType;

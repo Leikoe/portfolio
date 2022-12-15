@@ -21,7 +21,8 @@ export function getPostBySlug(slug: string): Post {
     date: data.date,
     coverImage: data.coverImage,
     authors: data.authors,
-    content: content
+    content: content,
+    featured: data.featured
   }
   
   return post;

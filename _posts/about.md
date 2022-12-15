@@ -3,6 +3,7 @@ title: 'About Me'
 coverImage: '/assets/blog/authors/leo.png'
 date: '2020-03-16T05:35:07.322Z'
 authors: 'Léo Paillé'
+featured: true
 ---
 
 # About Me
