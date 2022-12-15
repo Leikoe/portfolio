@@ -8,7 +8,7 @@ export default function Footer({
   nextVersion: string;
 }) {
   return (
-    <div className="col-start-2 col-end-4 mt-28 bg-secondary-400 pb-40 text-white">
+    <div className="col-start-2 col-end-4 bg-secondary-400 pb-40 text-white">
       <div className="e-container w-container">
         <div className="flex w-full items-center justify-between pt-24">
           <span className="flex items-center">

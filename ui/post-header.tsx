@@ -19,7 +19,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
         <div className="flex basis-1/3 flex-col justify-center">
           <PostTitle>{title}</PostTitle>
           {/* <Avatar name={author.name} picture={author.picture} /> */}
-          <DateFormatter dateString={date} />
+          <DateFormatter dateString={date} className="font-mono text-2xs" />
         </div>
 
         {/* right img col */}

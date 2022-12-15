@@ -28,12 +28,10 @@ module.exports = {
             fontSize: '28px',
           },
         ],
-        '3xl': [
-          '1.875rem',
+        '2xs': [
+          '12px',
           {
-            lineHeight: '2.25rem',
-            letterSpacing: '-0.02em',
-            fontWeight: '700',
+            lineHeight: '130%',
           },
         ],
       },
