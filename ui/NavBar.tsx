@@ -6,7 +6,7 @@ export default function NavBar() {
     <>
       <nav className="bg-secondary-400 text-white">
         <div className="w-container e-container">
-          <div className="flex w-full items-center justify-between py-4">
+          <div className="flex w-full items-center justify-between py-[15px]">
             <Link href="/">
               <img
                 style={{ imageRendering: 'crisp-edges', height: '50px' }}
