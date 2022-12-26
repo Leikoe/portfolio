@@ -1,5 +1,7 @@
 import PostPreview from './post-preview';
 import type Post from '@/lib/interfaces/post';
+import PostHeader from './post-header';
+import DateFormatter from './date-formatter';
 
 type Props = {
   name: string;
@@ -8,19 +10,20 @@ type Props = {
 
 const MoreStories = ({ name, posts }: Props) => {
   return (
-    <section>
-      <h2 className="mb-8 text-5xl font-bold leading-tight tracking-tighter md:text-7xl">
+    <section className="min-h-screen bg-gray-100">
+      {/* <h2 className="mb-8 text-5xl font-bold leading-tight tracking-tighter md:text-7xl">
         {name}
-      </h2>
-      <div className="mb-32 flex md:gap-x-16 md:gap-y-32 lg:gap-x-32">
+      </h2> */}
+      <div className="w-container e-container flex flex-col gap-1 pt-12">
         {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            slug={post.slug}
-          />
+          <>
+            <a href={'/posts/' + post.slug} className="bg-white">
+              <div className="flex flex-col p-4">
+                <div>{post.title}</div>
+                <DateFormatter dateString={post.date} />
+              </div>
+            </a>
+          </>
         ))}
       </div>
     </section>
