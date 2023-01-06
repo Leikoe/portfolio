@@ -7,6 +7,7 @@
 import { getPostBySlug } from '@/lib/api';
 import markdownToHtml from '@/lib/markdownToHtml';
 import PostBody from '@/ui/post-body';
+import PostHeader from '@/ui/post-header';
 
 export default async function Posts() {
   const post = getPostBySlug('about');
@@ -14,6 +15,12 @@ export default async function Posts() {
 
   return (
     <article className="mb-32">
+      <PostHeader
+        title={post.title}
+        coverImage={post.coverImage}
+        date={post.date}
+        author={post.authors}
+      />
       <PostBody content={content} />
     </article>
   );
