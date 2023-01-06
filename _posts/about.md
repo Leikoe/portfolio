@@ -20,4 +20,4 @@ I’m Léo, a second year Computer Science student at the IUT of Bordeaux, Franc
 
 ## Education
 
-Léo Paillé will graduate from the Computer Science IUT of Bordeaux, France in 2024, with a Bachelor in Computer Science.
+I will graduate from the Computer Science IUT of Bordeaux, France in 2024, with a Bachelor in Computer Science.
