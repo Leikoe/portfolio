@@ -12,13 +12,13 @@ type Props = {
 
 const PostFooter = ({ title, coverImage, date, authors }: Props) => {
   return (
-    <div className="mx-auto max-w-2xl">
-      <div className="border-b-[1px] border-[#e5e8ed] py-4">
+    <div className="e-container w-container mx-auto mt-20 flex-col">
+      <div className="border-t-[1px] border-[#e5e8ed] py-4">
         <h3 className="pb-2 text-2xs text-gray-400">Authors</h3>
         <p className="text-[16px] text-secondary-600">{authors}</p>
       </div>
 
-      <div className="border-b-[1px] border-[#e5e8ed] py-4">
+      <div className="border-t-[1px] border-[#e5e8ed] py-4">
         <h3 className="pb-2 text-2xs text-gray-400">Published</h3>
         <DateFormatter
           dateString={date}
