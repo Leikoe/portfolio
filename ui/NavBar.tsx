@@ -13,12 +13,21 @@ export default function NavBar() {
                 src="/favicon.ico"
               ></img>
             </Link>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 font-bold">
               <Link href="/posts" className="ml-9 p-2 small-caps">
                 blog
               </Link>
               <Link href="/about" className="ml-9 p-2 small-caps">
                 about
+              </Link>
+              <Link href="/uses" className="ml-9 p-2 small-caps">
+                uses
+              </Link>
+              <Link
+                href="https://github.com/Leikoe/leikoe.github.io"
+                className="ml-9 p-2 small-caps"
+              >
+                source
               </Link>
             </div>
           </div>

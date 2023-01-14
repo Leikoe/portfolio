@@ -1,7 +1,7 @@
 ---
 title: 'Bloom Filter'
 coverImage: 'https://blog.cloudflare.com/content/images/2020/02/bloom-filter@2x.png'
-date: '2020-03-16T05:35:07.322Z'
+date: '2022-11-23T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: true
 ---

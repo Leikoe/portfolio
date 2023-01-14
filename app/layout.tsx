@@ -16,8 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={sans.className}>
-      <body className="overflow-y-scroll text-lg leading-[160%] tracking-[.25px] text-secondary-400">
+    <html className={sans.className + ' dark'}>
+      <body
+        className="overflow-y-scroll bg-white text-lg leading-[160%]
+      tracking-[.25px] text-secondary-400 dark:bg-[#111]  dark:text-white"
+      >
         <NavBar></NavBar>
         <main className="min-h-screen">{children}</main>
         <Footer reactVersion="18.2" nextVersion="13"></Footer>
