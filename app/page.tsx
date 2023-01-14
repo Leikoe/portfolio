@@ -10,10 +10,10 @@ import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 
 export default async function Page() {
-  const allPosts: Post[] = getAllPosts().sort(function (a, b) {
+  const allPosts: Post[] = getAllPosts().sort(function (a, b): number {
     // Turn your strings into dates, and then subtract them
     // to get a value that is either negative, positive, or zero.
-    return new Date(b.date) - new Date(a.date);
+    return parseISO(b.date).getTime() - parseISO(a.date).getTime();
   });
 
   const p1 = allPosts[0];
