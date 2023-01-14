@@ -5,6 +5,7 @@ import PostBody from '@/ui/post-body';
 import { getAllPosts } from '@/lib/api';
 import Post from '@/lib/interfaces/post';
 import PostCard from '@/ui/post-card';
+import Image from 'next/image';
 
 import { parseISO, format } from 'date-fns';
 
@@ -22,17 +23,28 @@ export default async function Page() {
   return (
     <>
       <main className="w-container mt-20 pb-5 lg:max-w-2xl">
-        <div>
-          <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-            Léo Paillé
-          </h1>
-          <h2 className="mb-4 text-gray-700 dark:text-gray-200">
-            Second year CS student
-          </h2>
-          <p className="mb-16 text-gray-600 dark:text-gray-400">
-            I like fast software, also a rustacean. Currently working in
-            robotics, preparing for the 2023 robocup.
-          </p>
+        <div className="flex flex-col-reverse items-start sm:flex-row">
+          <div className="flex flex-col pr-8">
+            <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+              Léo Paillé
+            </h1>
+            <h2 className="mb-4 text-gray-700 dark:text-gray-200">
+              Second year CS student
+            </h2>
+            <p className="mb-16 text-gray-600 dark:text-gray-400">
+              I like fast software, also a rustacean. Currently working in
+              robotics, preparing for the 2023 robocup.
+            </p>
+          </div>
+          <div className="relative mb-8 mr-auto w-[80px] sm:mb-0 sm:w-[176px]">
+            <Image
+              src="/pfp.png"
+              alt="Leikoe"
+              width={500}
+              height={500}
+              className="rounded-full filter"
+            />
+          </div>
         </div>
 
         <div>

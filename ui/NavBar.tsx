@@ -4,7 +4,7 @@ import React from 'react';
 export default function NavBar() {
   return (
     <>
-      <nav className="bg-secondary-400 text-white">
+      <nav className="bg-secondary-400 text-white dark:bg-[#111]">
         <div className="w-container e-container">
           <div className="flex w-full items-center justify-between py-[15px]">
             <Link href="/">
