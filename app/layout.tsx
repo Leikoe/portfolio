@@ -1,5 +1,6 @@
 import '@/styles/dist.css';
-import '@/styles/prism-one-light.css';
+// import '@/styles/prism-one-light.css';
+import '@/styles/globals.css';
 import React from 'react';
 import { DM_Sans } from '@next/font/google';
 import NavBar from '@/ui/NavBar';
