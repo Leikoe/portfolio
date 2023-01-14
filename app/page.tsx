@@ -1,20 +1,10 @@
-import { demos } from '@/lib/demos';
-import markdownToHtml from '@/lib/markdownToHtml';
-import Link from 'next/link';
-import PostBody from '@/ui/post-body';
 import { getAllPosts } from '@/lib/api';
 import Post from '@/lib/interfaces/post';
 import PostCard from '@/ui/post-card';
 import Image from 'next/image';
 
-import { parseISO, format } from 'date-fns';
-
 export default async function Page() {
-  const allPosts: Post[] = getAllPosts().sort(function (a, b): number {
-    // Turn your strings into dates, and then subtract them
-    // to get a value that is either negative, positive, or zero.
-    return parseISO(b.date).getTime() - parseISO(a.date).getTime();
-  });
+  const allPosts: Post[] = getAllPosts();
 
   const p1 = allPosts[0];
   const p2 = allPosts[1];
