@@ -420,6 +420,16 @@ video {
 }
 
 *, ::before, ::after {
+  --ot-sups: "sups" 0;
+  --ot-subs: "subs" 0;
+  --ot-sinf: "sinf" 0;
+  --ot-hlig: "hlig" 0;
+  --ot-salt: "salt" 0;
+  --ot-ss01: "ss01" 0;
+  --ot-ss02: "ss02" 0;
+  --ot-ss03: "ss03" 0;
+  --ot-ss04: "ss04" 0;
+  --ot-features: var(--ot-sups), var(--ot-subs), var(--ot-sinf), var(--ot-hlig), var(--ot-salt), var(--ot-ss01), var(--ot-ss02), var(--ot-ss03), var(--ot-ss04);
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -467,6 +477,16 @@ video {
 }
 
 ::backdrop {
+  --ot-sups: "sups" 0;
+  --ot-subs: "subs" 0;
+  --ot-sinf: "sinf" 0;
+  --ot-hlig: "hlig" 0;
+  --ot-salt: "salt" 0;
+  --ot-ss01: "ss01" 0;
+  --ot-ss02: "ss02" 0;
+  --ot-ss03: "ss03" 0;
+  --ot-ss04: "ss04" 0;
+  --ot-features: var(--ot-sups), var(--ot-subs), var(--ot-sinf), var(--ot-hlig), var(--ot-salt), var(--ot-ss01), var(--ot-ss02), var(--ot-ss03), var(--ot-ss04);
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -1878,6 +1898,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.small-caps {
+  font-variant-caps: small-caps;
 }
 
 .\[color-scheme\:dark\] {

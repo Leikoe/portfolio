@@ -2,7 +2,10 @@
 module.exports = {
   darkMode: 'class',
   content: ['./app/**/*.{js,ts,jsx,tsx}', './ui/**/*.{js,ts,jsx,tsx}'],
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-opentype'),
+  ],
   theme: {
     extend: {
       colors: {

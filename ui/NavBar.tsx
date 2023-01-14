@@ -14,10 +14,10 @@ export default function NavBar() {
               ></img>
             </Link>
             <div className="flex items-center gap-3">
-              <Link href="/posts" className="ml-9 p-2">
-                works
+              <Link href="/posts" className="ml-9 p-2 small-caps">
+                blog
               </Link>
-              <Link href="/about" className="ml-9 p-2">
+              <Link href="/about" className="ml-9 p-2 small-caps">
                 about
               </Link>
             </div>

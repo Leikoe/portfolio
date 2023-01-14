@@ -34,6 +34,7 @@
     "remark-rehype": "^10.1.0",
     "styled-components": "6.0.0-beta.2",
     "styled-jsx": "5.1.0",
+    "tailwindcss-opentype": "^1.1.0",
     "unified": "^10.1.2",
     "use-count-up": "3.0.1"
   },
