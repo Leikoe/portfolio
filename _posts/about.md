@@ -4,6 +4,7 @@ coverImage: '/assets/blog/authors/leo.png'
 date: '2023-01-13T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
+tags: ''
 ---
 
 # About Me

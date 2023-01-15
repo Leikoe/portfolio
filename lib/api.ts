@@ -19,10 +19,11 @@ export function getPostBySlug(slug: string): Post {
     slug: realSlug,
     title: data.title,
     date: data.date,
-    coverImage: data.coverImage,
+    coverImage: '/assets/blog/' + realSlug + '/index.png',
     authors: data.authors,
     content: content,
-    featured: data.featured
+    featured: data.featured,
+    tags: data.tags.split(",")
   }
   
   return post;

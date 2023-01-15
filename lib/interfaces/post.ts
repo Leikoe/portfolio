@@ -6,6 +6,7 @@ type PostType = {
   authors: string
   content: string
   featured: boolean
+  tags: string[]
 }
 
 export default PostType;
