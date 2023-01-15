@@ -19,7 +19,7 @@ export function getPostBySlug(slug: string): Post {
     slug: realSlug,
     title: data.title,
     date: data.date,
-    coverImage: '/assets/blog/' + realSlug + '/index.png',
+    coverImage: data.coverImage || '/assets/blog/' + realSlug + '/index.png',
     authors: data.authors,
     content: content,
     featured: data.featured,

@@ -4,7 +4,7 @@ coverImage: 'https://blog.cloudflare.com/content/images/2020/02/bloom-filter@2x.
 date: '2022-11-23T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: true
-tags: ''
+tags: 'java,jvm,optimization,asm'
 ---
 
 # Simple Bloom Filter implementation in java

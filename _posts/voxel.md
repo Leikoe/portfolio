@@ -1,6 +1,5 @@
 ---
 title: 'Voxel Game engine'
-coverImage: '/assets/blog/voxel/voxel.png'
 date: '2022-03-12T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false

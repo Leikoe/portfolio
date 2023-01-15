@@ -1,10 +1,9 @@
 ---
-title: 'Hypixel Skyblock AH flipping bot'
-coverImage: '/assets/blog/stonks/flips.png'
+title: 'Hypixel Skyblock Auction House flipping bot'
 date: '2020-07-16T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
-tags: ''
+tags: 'py,js,go,c++,rust,java,kotlin'
 ---
 
 ### Stonks
