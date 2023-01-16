@@ -1,7 +1,10 @@
+'use client';
+
 import PostPreview from './post-preview';
 import type Post from '@/lib/interfaces/post';
 import PostHeader from './post-header';
 import DateFormatter from './date-formatter';
+import { motion } from 'framer-motion';
 
 type Props = {
   name: string;
@@ -17,7 +20,9 @@ const MoreStories = ({ name, posts }: Props) => {
       <div className="w-container e-container flex flex-col gap-1 pt-12">
         {posts.map((post) => (
           <>
-            <a
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               href={'/posts/' + post.slug}
               className="bg-white dark:bg-neutral-900"
             >
@@ -25,7 +30,7 @@ const MoreStories = ({ name, posts }: Props) => {
                 <div>{post.title}</div>
                 <DateFormatter dateString={post.date} />
               </div>
-            </a>
+            </motion.a>
           </>
         ))}
       </div>
