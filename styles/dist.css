@@ -1042,22 +1042,21 @@ video {
   --tw-prose-pre-bg: #f1f5f5;
   --tw-prose-th-borders: #0b65f3;
   --tw-prose-td-borders: #458dff;
-  --tw-prose-invert-body: #458dff;
   --tw-prose-invert-headings: #fff;
-  --tw-prose-invert-lead: #0b65f3;
+  --tw-prose-invert-lead: #94a3b8;
   --tw-prose-invert-links: #fff;
   --tw-prose-invert-bold: #fff;
-  --tw-prose-invert-counters: #0053d6;
-  --tw-prose-invert-bullets: #123693;
-  --tw-prose-invert-hr: #082d8b;
-  --tw-prose-invert-quotes: #a8caff;
-  --tw-prose-invert-quote-borders: #082d8b;
-  --tw-prose-invert-captions: #0053d6;
+  --tw-prose-invert-counters: #94a3b8;
+  --tw-prose-invert-bullets: #475569;
+  --tw-prose-invert-hr: #334155;
+  --tw-prose-invert-quotes: #f1f5f9;
+  --tw-prose-invert-quote-borders: #334155;
+  --tw-prose-invert-captions: #94a3b8;
   --tw-prose-invert-code: #fff;
-  --tw-prose-invert-pre-code: #0b65f3;
+  --tw-prose-invert-pre-code: #cbd5e1;
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
-  --tw-prose-invert-th-borders: #123693;
-  --tw-prose-invert-td-borders: #082d8b;
+  --tw-prose-invert-th-borders: #475569;
+  --tw-prose-invert-td-borders: #334155;
 }
 
 .e-container {
@@ -1559,16 +1558,6 @@ video {
 .bg-pink-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 231 243 / var(--tw-bg-opacity));
-}
-
-.bg-teal-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 246 228 / var(--tw-bg-opacity));
-}
-
-.bg-teal-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 251 241 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
