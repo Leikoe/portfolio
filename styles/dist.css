@@ -1834,6 +1834,14 @@ video {
   height: 3rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -2244,6 +2252,16 @@ video {
 .py-\[15px\] {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-5 {
@@ -2904,6 +2922,10 @@ html.dark {
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-14 {
+    height: 3.5rem;
+  }
+
   .lg\:max-w-2xl {
     max-width: 42rem;
   }
@@ -3558,6 +3580,11 @@ html.dark {
     margin-bottom: 0;
   }
 
+  .lg\:py-\[15px\] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .lg\:text-2xs {
     font-size: 12px;
     line-height: 130%;
@@ -3570,5 +3597,10 @@ html.dark {
   .lg\:text-2xl {
     font-size: 28px;
     line-height: 130%;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
