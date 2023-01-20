@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <NavBar></NavBar>
         <AnimatePresence
-          exitBeforeEnter
+          mode="wait"
           initial={true}
           onExitComplete={() => {
             if (typeof window !== 'undefined') {
