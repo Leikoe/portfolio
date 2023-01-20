@@ -29,6 +29,8 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
           <Image
             src={coverImage}
             alt={title}
+            height={'500'}
+            width={'1280'}
             sizes="100vw"
             className="object-cover"
           />
