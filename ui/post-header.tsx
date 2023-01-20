@@ -2,6 +2,7 @@ import Avatar from './avatar';
 import DateFormatter from './date-formatter';
 import CoverImage from './cover-image';
 import PostTitle from './post-title';
+import Image from 'next/image';
 
 type Props = {
   title: string;
@@ -25,7 +26,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
 
         {/* right img col */}
         <div className="max-h-[500px] overflow-hidden">
-          <img
+          <Image
             src={coverImage}
             alt={title}
             sizes="100vw"
