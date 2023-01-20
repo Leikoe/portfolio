@@ -14,7 +14,7 @@ export default async function Page() {
     <>
       <main className="w-container e-container mt-20 flex-col pb-5 lg:max-w-2xl">
         <div className="flex flex-col-reverse items-start sm:flex-row">
-          <div className="flex flex-col pr-8 text-3xl">
+          <div className="flex flex-col pr-8 text-3xl lg:text-xl">
             <h1 className="mb-1 text-6xl font-bold tracking-tight text-black dark:text-white lg:text-3xl">
               Léo Paillé
             </h1>
