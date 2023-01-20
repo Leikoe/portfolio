@@ -1,5 +1,5 @@
 ---
-title: 'Exotic Café, a discord for Hypixel Skyblock exotic armor collectors'
+title: 'Creating a luxury market in a Minecraft Minigame - Exotic Café'
 date: '2020-02-12T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false

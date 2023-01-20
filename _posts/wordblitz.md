@@ -1,5 +1,5 @@
 ---
-title: 'WordBlitz Solver, a WordBlitz self playing bot made in python'
+title: 'Destroying scrabble players with Tesseract - Wordblitz Solver'
 date: '2018-08-08T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false

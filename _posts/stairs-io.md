@@ -1,5 +1,5 @@
 ---
-title: 'Stairs.io, a reversed flappy bird'
+title: 'Building reversed flappy bird game to learn unity - Stairs.io'
 date: '2021-07-23T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false

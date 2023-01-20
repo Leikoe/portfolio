@@ -1,5 +1,5 @@
 ---
-title: 'Hypixel Skyblock Auction House flipping bot'
+title: 'When Minecraft teaches you how to code - Stonks'
 date: '2020-07-16T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false

@@ -1,5 +1,5 @@
 ---
-title: 'Voxel Game engine'
+title: 'Voxels by hand in Windows Forms'
 date: '2022-03-12T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
