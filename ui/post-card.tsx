@@ -11,7 +11,7 @@ const PostCard = ({ title, slug, date, gradient }: Props) => {
   return (
     <a
       className={
-        'h-40 w-full transform rounded-xl bg-gradient-to-r p-1 transition-all hover:scale-[1.01] md:w-1/3' +
+        'min-h-min w-full transform rounded-xl bg-gradient-to-r p-1 transition-all hover:scale-[1.01] md:w-1/3' +
         gradient
       }
       href={'/posts/' + slug}
