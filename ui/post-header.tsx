@@ -17,7 +17,10 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
         {/* left text col */}
         <div className="flex basis-1/3 flex-col justify-center">
           <PostTitle>{title}</PostTitle>
-          <DateFormatter dateString={date} className="font-mono text-2xs" />
+          <DateFormatter
+            dateString={date}
+            className="font-mono text-xl lg:text-2xs"
+          />
         </div>
 
         {/* right img col */}
