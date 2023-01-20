@@ -1942,6 +1942,10 @@ video {
   font-weight: 500;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2110,6 +2114,10 @@ video {
 .text-secondary-600 {
   --tw-text-opacity: 1;
   color: rgb(18 54 147 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow-\[0_0_1px_4px_black\] {

@@ -9,7 +9,7 @@ export default function Footer({
 }) {
   return (
     <div className="col-start-2 col-end-4 border-t border-[#333] bg-secondary-400 pb-40 text-white dark:bg-[#111]">
-      <div className="e-container w-container">
+      <div className="e-container w-container flex-col items-center justify-center">
         <div className="flex w-full items-center justify-between pt-24">
           <span className="flex items-center">
             <span className="mr-3">Powered by</span>
@@ -20,6 +20,13 @@ export default function Footer({
               ></path>
             </svg>
           </span>
+
+          <div className="flex space-x-6 text-sm">
+            <div className="font-semibold">Contact:</div>
+            <a className="underline" href="mailto:leo.paille@etu.u-bordeaux.fr">
+              leo.paille@etu.u-bordeaux.fr
+            </a>
+          </div>
 
           <div className="flex space-x-6 text-sm">
             <div>React: {reactVersion}</div>
