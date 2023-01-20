@@ -26,8 +26,8 @@ export default function RootLayout({
   return (
     <html className={sans.className + ' dark'}>
       <body
-        className="overflow-x-hidden overflow-y-scroll bg-white text-lg leading-[160%]
-      tracking-[.25px] text-secondary-400 dark:bg-[#111]  dark:text-white"
+        className="w-screen overflow-x-hidden overflow-y-scroll bg-white text-lg
+      leading-[160%] tracking-[.25px] text-secondary-400  dark:bg-[#111] dark:text-white"
       >
         <NavBar></NavBar>
         <AnimatePresence

@@ -1451,6 +1451,10 @@ video {
   width: 3rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-\[29vw\] {
   max-width: 29vw;
 }
@@ -1583,6 +1587,11 @@ video {
 
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .rounded-full {
