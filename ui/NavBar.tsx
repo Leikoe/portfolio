@@ -16,7 +16,7 @@ export default function NavBar() {
             </Link>
             <div className="flex items-center gap-3 text-4xl font-bold lg:text-base">
               <Link href="/posts" className="ml-9 p-2 small-caps">
-                blog
+                posts
               </Link>
               <Link href="/about" className="ml-9 p-2 small-caps">
                 about
