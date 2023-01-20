@@ -9,7 +9,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'blog.cloudflare.com',
+        hostname: '**',
         port: '',
         pathname: '/**',
       },
