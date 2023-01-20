@@ -12,10 +12,10 @@ export default async function Page() {
 
   return (
     <>
-      <main className="w-container mt-20 pb-5 lg:max-w-2xl">
+      <main className="w-container e-container mt-20 flex-col pb-5 lg:max-w-2xl">
         <div className="flex flex-col-reverse items-start sm:flex-row">
-          <div className="flex flex-col pr-8">
-            <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+          <div className="flex flex-col pr-8 text-3xl">
+            <h1 className="mb-1 text-6xl font-bold tracking-tight text-black dark:text-white lg:text-3xl">
               Léo Paillé
             </h1>
             <h2 className="mb-4 text-gray-700 dark:text-gray-200">
@@ -41,7 +41,7 @@ export default async function Page() {
           <h1 className="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
             Featured Posts
           </h1>
-          <div className="flex flex-col gap-6 md:flex-row">
+          <div className="flex flex-col gap-6 lg:flex-row">
             <PostCard
               title={p1.title}
               slug={p1.slug}
