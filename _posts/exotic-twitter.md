@@ -4,6 +4,7 @@ date: '2020-12-18T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
 tags: 'python,twitter api'
+hidden: false
 ---
 
 > A twitter bot which notifies you when a rare item is up for sale

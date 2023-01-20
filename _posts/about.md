@@ -4,6 +4,7 @@ date: '2023-01-13T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
 tags: ''
+hidden: true
 ---
 
 # About Me

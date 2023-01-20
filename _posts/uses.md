@@ -4,6 +4,7 @@ date: '2023-01-20T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
 tags: ''
+hidden: true
 ---
 
 # My everyday gear

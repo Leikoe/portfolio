@@ -4,6 +4,7 @@ date: '2018-08-08T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
 tags: 'python,tesseract'
+hidden: false
 ---
 
 # Building a Scrabble Bot with Python

@@ -4,6 +4,7 @@ date: '2021-07-23T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
 tags: 'unity,c#'
+hidden: false
 ---
 
 # Stairs.io: My First Mobile Game

@@ -7,6 +7,7 @@ type PostType = {
   content: string
   featured: boolean
   tags: string[]
+  hidden: boolean
 }
 
 export default PostType;

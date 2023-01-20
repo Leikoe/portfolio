@@ -4,6 +4,7 @@ date: '2022-04-16T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
 tags: 'py,js,go,c++,rust,java,kotlin'
+hidden: false
 ---
 
 # Stonks: A Sniping Tool for Hypixel Skyblock

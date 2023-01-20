@@ -23,7 +23,8 @@ export function getPostBySlug(slug: string): Post {
     authors: data.authors,
     content: content,
     featured: data.featured,
-    tags: data.tags.split(",")
+    tags: data.tags.split(","),
+    hidden: data.hidden
   }
   
   return post;
@@ -33,6 +34,7 @@ export function getAllPosts() {
   const slugs = getPostSlugs()
   const posts = slugs
     .map((slug) => getPostBySlug(slug))
+    .filter(p => !p.hidden)
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
