@@ -1,5 +1,5 @@
 ---
-title: 'Sniping nfs for fun and profit - NSG'
+title: 'Sniping NFTs for fun and profit - NSG'
 date: '2022-02-10T05:35:07.322Z'
 authors: 'Léo Paillé'
 featured: false
